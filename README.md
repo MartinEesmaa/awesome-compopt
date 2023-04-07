@@ -22,7 +22,7 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 * [TAK](http://thbeck.de/Tak/Tak.html) - Tom's Lossless audio Kompressor, best for speed of encode & decode
 * [WavPack](https://wavpack.com) - Wave Packer, best for DSD and 32-bit float IEEE
 * [OptimFROG](http://losslessaudio.org/) - Optim Frog, best for file size of maximum preset
-* [LA]() - Lossless Audio Codec, best alternative to OptimFROG
+* [LA](https://web.archive.org/web/20210501091140/http://www.lossless-audio.com/) - Lossless Audio Codec, best alternative to OptimFROG
 * [Monkey's Audio](https://monkeysaudio.com/) - Monkey's Audio, best for compression well.
 * [MP4-ALS](https://en.wikipedia.org/wiki/Audio_Lossless_Coding) - MPEG-4 Audio Lossless, best for multichannel compression ratio.
 * [TTA](http://tausoft.org/wiki/True_Audio_Codec_Overview) - True Audio Lossless, best for ultra low latency.
@@ -52,6 +52,7 @@ ALAC | ✔️ | Cross-platform | ✔️ |
 TAK | ❌ | Windows | ✔️ (decode only) |
 WavPack | ✔️ | Cross-platform | ✔️ |
 OptimFROG | ❌ | Windows, Mac, Linux, FreeBSD | ❌ |
+LA | ❌ | Windows & Linux | ❌ |
 Monkey's Audio | ❌ | Windows | ⚠️ (maximum 2 channels decode only)
 WMAL | ❌ | Windows | ⚠️ (partially decode support)
 MPEG-4 ALS | ✔️ | Cross-platform | ✔️ (decode only) |
@@ -66,6 +67,7 @@ flac -8ep -r 15 -l 32 --lax file.wav
 takc -e -p4m file.wav
 wavpack -x6hh file.wav
 ofr --preset max --seek slow file.wav
+la -high -noseek file.wav
 mac file.wav file.ape -c5000
 mp4als -o1023 -a -b -7 -p -MP4 -v file.wav
 tta -e file.wav file.tta
