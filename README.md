@@ -35,12 +35,12 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 * [WMAL](https://en.wikipedia.org/w/index.php?title=Windows_Media_Audio#Windows_Media_Audio_Lossless) - Windows Media Audio Lossless, best for legacy Windows & Microsoft hardwares.
 
 ### Repack compressor of lossy audio files
-* [MP3packer](https://wiki.hydrogenaud.io/index.php/MP3packer) - MP3packer is a program which can rearrange the data within an MP3 to fulfill specific goals for reducing 2-10% from CBR to VBR without a loss quality and can rearrange back anytime for CBR or VBR MP3 audio files.
 * [packMP3](http://packjpg.encode.su/?page_id=19) - A compression program for further compressing MP3 audio files (most compatability and FOSS cross-platform)
 * [mpz](https://mega.nz/file/f08U0aAC#jPgr1vdMAi8cXYEyiQTXIQeE7bD5jgxuU8tnEYrOzm8) - Sound Slimmer of MP3 repack compressor, but the development ended in 2007 (trialware)
 * [OGGRE](https://darckrepacks.com/files/file/262-oggre/) - OGGRE is a vorbis lossless compressor (freeware)
 
 ### Optimizers
+* [MP3packer](https://wiki.hydrogenaud.io/index.php/MP3packer) - MP3packer is a program which can rearrange the data within an MP3 to fulfill specific goals for reducing 2-10% from CBR to VBR without a loss quality and can rearrange back anytime for CBR or VBR MP3 audio files, but likely optimizer.
 * [OptiVorbis](https://github.com/OptiVorbis/OptiVorbis) - Library and application for lossless, format-preserving, two-pass optimization and repair of Vorbis data, reducing its size without altering any audio information.
 
 ### Availability & compatability
@@ -83,7 +83,7 @@ ffmpeg -i file.wav -c:a tta file.tta
 
 **MP3Packer:**
 
-MP3Packer compresses and rearranges for CBR/VBR MP3 Layer I/II streams.
+MP3Packer compresses and rearranges for CBR/VBR MP3 Layer I/II streams, but likely optimizing.
 
 ```
 mp3packer --copy-time -z constant.mp3
