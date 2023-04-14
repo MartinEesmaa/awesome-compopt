@@ -403,7 +403,7 @@ See the UPX documentation: https://github.com/upx/upx/blob/devel/doc/upx-doc.txt
 
 **Crinkler:**
 
-Note: This can only target .obj files, maximum 8 KB size, C/C++/ASM codes and Windows 32-bit via Visual Studio 2003+ version or Intel C++ Compiler before the final compiles to output a shrinked executable file.
+Note: This can only target one .obj file, maximum 8 KB size, C/C++/ASM codes and Windows 32-bit via Visual Studio 2003+ version or Intel C++ Compiler before the final compiles to output a shrinked executable file.
 
 For Visual Studio .NET 2003 version: Use /GA to reduce file size.
 
@@ -425,6 +425,11 @@ See the Crinkler documentation: https://github.com/runestubbe/Crinkler/blob/mast
 
 If your code wants to target subsystem Windows, change from CONSOLE to WINDOWS.
 
+For targetting only output EXE file to operating systems using Crinkler for last compatability OS:
+
+Windows 2000: 1.1
+Windows XP: 1.3
+
 **Leanify:**
 
 ***Please do UPX compress first, before you head to Leanify and test the program***
@@ -435,7 +440,7 @@ Leanify can remove only 512 bytes for Windows 32-bit and 64-bit UPX portable exe
 leanify upx_packed.exe
 ```
 
-**Visual Studio:**
+**MSVC:**
 
 If you want to compile example C file, command:
 
