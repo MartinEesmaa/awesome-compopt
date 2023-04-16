@@ -418,7 +418,7 @@ crinkler /ENTRY:main /SUBSYSTEM:CONSOLE example.obj kernel32.lib
 Crinkler insane command:
 ```
 cl /c /O1 /GS- example.c && \
-crinkler /ENTRY:main /NODEFAULTLIB /UNSAFEIMPORT /TINYHEADER /TINYIMPORT /COMPMODE:VERYSLOW /HASHSIZE:500 /HASHTRIES:100 /SUBSYSTEM:CONSOLE example.obj kernel32.lib user32.lib
+crinkler /ENTRY:main /NODEFAULTLIB /UNSAFEIMPORT /TINYHEADER /TINYIMPORT /COMPMODE:VERYSLOW /HASHSIZE:10000 /HASHTRIES:100000 /ORDERTRIES:100000 /SUBSYSTEM:CONSOLE example.obj kernel32.lib user32.lib
 ```
 
 See the Crinkler documentation: https://github.com/runestubbe/Crinkler/blob/master/doc/manual.txt
