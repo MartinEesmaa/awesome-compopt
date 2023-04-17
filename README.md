@@ -403,7 +403,7 @@ See the UPX documentation: https://github.com/upx/upx/blob/devel/doc/upx-doc.txt
 
 **Crinkler:**
 
-Note: This can only target one .obj file, maximum 8 KB size, C/C++/ASM codes and Windows 32-bit via Visual Studio 2003+ version or Intel C++ Compiler before the final compiles to output a shrinked executable file.
+Note: This can target .obj files, maximum 8 KB size, C/C++/ASM codes and Windows 32-bit via Visual Studio 2003+ version or Intel C++ Compiler before the final compiles to output a shrinked executable file.
 
 For Visual Studio .NET 2003 version: Use /GA to reduce file size.
 
@@ -418,7 +418,7 @@ crinkler /ENTRY:main /SUBSYSTEM:CONSOLE example.obj kernel32.lib
 Crinkler insane command:
 ```
 cl /c /O1 /GS- example.c && \
-crinkler /ENTRY:main /NODEFAULTLIB /UNSAFEIMPORT /TINYHEADER /TINYIMPORT /COMPMODE:VERYSLOW /HASHSIZE:1000 /HASHTRIES:100000 /ORDERTRIES:100000 /SUBSYSTEM:CONSOLE example.obj kernel32.lib user32.lib
+crinkler /ENTRY:main /NODEFAULTLIB /UNSAFEIMPORT /TINYHEADER /TINYIMPORT /COMPMODE:VERYSLOW /HASHSIZE:1000 /HASHTRIES:100000 /ORDERTRIES:100000 /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /TRUNCATEFLOATS /OVERRIDEALIGNMENTS /UNALIGNCODE example.obj kernel32.lib user32.lib
 ```
 
 See the Crinkler documentation: https://github.com/runestubbe/Crinkler/blob/master/doc/manual.txt
@@ -429,6 +429,8 @@ For targetting only output EXE file to operating systems using Crinkler for last
 
 Windows 2000: 1.1
 Windows XP: 1.3
+
+For running Windows executable files in Wine Linux, this means can't run program well.
 
 **Leanify:**
 
