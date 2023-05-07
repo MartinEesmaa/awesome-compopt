@@ -33,6 +33,7 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 * [Meridian Lossless Packing](https://en.wikipedia.org/wiki/Meridian_Lossless_Packing) - Alternative same as Dolby TrueHD, but it is useful for DVD Audio and HD-DVD.
 * [LPCM](https://en.wikipedia.org/wiki/Pulse-code_modulation#Implementations) - Mandatory used in DVD and Blu-ray.
 * [WMAL](https://en.wikipedia.org/w/index.php?title=Windows_Media_Audio#Windows_Media_Audio_Lossless) - Windows Media Audio Lossless, best for legacy Windows & Microsoft hardwares.
+* [ATRAC3 AL](https://en.wikipedia.org/wiki/ATRAC#ATRAC_Advanced_Lossless) - Adaptive TRansform Acoustic Coding 3 Advanced Lossless, best for legacy Sony product &hardwares.
 
 ### Repack compressor of lossy audio files
 * [packMP3](http://packjpg.encode.su/?page_id=19) - A compression program for further compressing MP3 audio files (most compatability and FOSS cross-platform)
@@ -45,19 +46,20 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 
 ### Availability & compatability
 
-Compressors | FOSS | Platform | FFmpeg (cross-platform)
---- | --- | --- | --- |
-FLAC | ✔️ | Cross-platform | ✔️ |
-ALAC | ✔️ | Cross-platform | ✔️ |
-TAK | ❌ | Windows | ✔️ (decode only) |
-WavPack | ✔️ | Cross-platform | ✔️ |
-OptimFROG | ❌ | Windows, Mac, Linux, FreeBSD | ❌ |
-LA | ❌ | Windows & Linux | ❌ |
-Monkey's Audio | ❌ | Windows | ⚠️ (maximum 2 channels decode only)
-WMAL | ❌ | Windows | ⚠️ (partially decode support)
-MPEG-4 ALS | ✔️ | Cross-platform | ✔️ (decode only) |
-TTA | ✔️ | Cross-platform | ✔️ |
-SAC | ✔️ | Cross-platform | ❌ |
+Compressors | FOSS | Platform | FFmpeg (cross-platform) | MPX DOS
+--- | --- | --- | --- | --- |
+FLAC | ✔️ | Cross-platform | ✔️ | ✔️
+ALAC | ✔️ | Cross-platform | ✔️ | ❌
+TAK | ❌ | Windows | ✔️ (decode only) | ❌
+WavPack | ✔️ | Cross-platform | ✔️ | ✔️
+OptimFROG | ❌ | Windows, Mac, Linux, FreeBSD | ❌ | ❌
+LA | ❌ | Windows & Linux | ❌ | ❌
+Monkey's Audio | ❌ | Windows | ⚠️ (maximum 2 channels decode only) | ✔️
+WMAL | ❌ | Windows | ⚠️ (partially decode support) | ❌
+MPEG-4 ALS | ✔️ | Cross-platform | ✔️ (decode only) | ❌
+TTA | ✔️ | Cross-platform | ✔️ | ❌
+SAC | ✔️ | Cross-platform | ❌ | ❌
+ATRAC3 AL | ❌ | Windows, macOS | ✔️ (decode only) | ❌
 
 Note about SAC: It does not support error detection, you should compress `sac --encode example.wav example.sac` and decompress SAC audio to WAV to match MD5 decompressed same as original WAV MD5 by `sac --decode example.sac example.wav`. If both MD5 were same, it's lossless, but if both MD5 were different, it's loss quality when using SAC Lossless codec.
 
@@ -386,6 +388,7 @@ mp4box -itags all=NULL -for-test -add example.h264 -new example.mp4
 * [MSVC](https://visualstudio.microsoft.com/vs/features/cplusplus/) - Microsoft Visual C++
 * [GCC](https://gcc.gnu.org/) - the GNU Compiler Collection
 * [Clang](https://clang.llvm.org/) - a C language family frontend for LLVM
+* [Rust](https://www.rust-lang.org/) - Empowering everyone to build reliable and efficient software.
 
 To compress executable file:
 
@@ -428,6 +431,7 @@ If your code wants to target subsystem Windows, change from CONSOLE to WINDOWS.
 For targetting only output EXE file to operating systems using Crinkler for last compatability OS:
 
 Windows 2000: 1.1
+
 Windows XP: 1.3
 
 For running Windows executable files in Wine Linux, this means can't run program well.
@@ -464,9 +468,18 @@ If you want to compile example C file, command:
 clang -O3 example.c
 ```
 
-**TIP:** If you're making a small math calculator in console and it's lower than 2048 MB memory reported in Task Manager/System Monitor, this must be 32-bit build to save up file size than 64-bit build.
+**Rust:**
 
-If you're making huge like game graphics, this must be 64-bit build.
+You can add following lines in config.toml:
+```
+[profile.release]
+opt-level = 3
+lto = true
+```
+
+**TIP:** If you're making a small math calculator in console and it's lower than 4096 MB memory reported in Task Manager/System Monitor, this must be 32-bit build to save up file size than 64-bit build.
+
+If you're making huge like game graphics and more than 4096 MB memory used of compiled program, this must be 64-bit build.
 
 **TIP 2:** Use minimum compiler to compile acceptable codes.
 
