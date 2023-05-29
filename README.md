@@ -61,8 +61,6 @@ TTA | ✔️ | Cross-platform | ✔️ | ❌
 SAC | ✔️ | Cross-platform | ❌ | ❌
 ATRAC3 AL | ❌ | Windows, macOS | ✔️ (decode only) | ❌
 
-Note about SAC: It does not support error detection, you should compress `sac --encode example.wav example.sac` and decompress SAC audio to WAV to match MD5 decompressed same as original WAV MD5 by `sac --decode example.sac example.wav`. If both MD5 were same, it's lossless, but if both MD5 were different, it's loss quality when using SAC Lossless codec.
-
 **Hardened audio internal program commands:**
 ```
 flac -8ep -r 15 -l 32 --lax file.wav
