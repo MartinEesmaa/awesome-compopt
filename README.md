@@ -456,14 +456,14 @@ cl /O1 example.c /link user32.lib
 
 If you want to compile example C file, command:
 ```
-gcc -O3 -s -flto example.c
+gcc -Os -s -flto example.c
 ```
 
 **Clang:**
 
 If you want to compile example C file, command:
 ```
-clang -s -O3 example.c
+clang -s -Os example.c
 ```
 
 **Rust:**
@@ -482,5 +482,7 @@ If you're making huge like game graphics and more than 4096 MB memory used of co
 **TIP 2:** Use minimum compiler to compile acceptable codes.
 
 **TIP 3:** Remove dead codes using Cppcheck for C++ codes or Visual Studio.
+
+**TIP 4:** If you have smaller codes of source code and small loops, you can maximize size using `-Os`. If you have bigger codes and loops, you can use favor speed using `-O2` command.
 
 - Martin Eesmaa
