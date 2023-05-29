@@ -458,14 +458,14 @@ cl /O1 example.c /link user32.lib
 
 If you want to compile example C file, command:
 ```
-gcc -O3 -flto example.c
+gcc -O3 -s -flto example.c
 ```
 
 **Clang:**
 
 If you want to compile example C file, command:
 ```
-clang -O3 example.c
+clang -s -O3 example.c
 ```
 
 **Rust:**
