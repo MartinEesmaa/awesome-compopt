@@ -229,7 +229,7 @@ jsmin <example.js >example.min.js
 
 wasm-opt can optimize WebAssembly files:
 ```
-wasm-opt -Oz example.wasm
+wasm-opt -Oz example.wasm -o example-min.wasm
 ```
 
 ## Image
@@ -244,7 +244,7 @@ wasm-opt -Oz example.wasm
 
 **packJPG:**
 
-packJPG can compress JPG files fast, most compatability and cross-platform.
+packJPG can compress JPG files fast, most compatability and cross-platform for desktop operating systems only.
 
 ```
 packjpg example.jpg
@@ -261,7 +261,7 @@ lepton-slow-best-ratio -skipvalidate example.jpg
 
 **JPEG-XL:**
 
-JPEG-XL can compress JPG and PNG files, even supports animations and lossless/lossy compression. JPEG-XL was implementated to the [supported softwares](https://jpegxl.info/), but due to the cons for Chrome version 110+ removed JPEG-XL and Firefox is only available version of Nightly. JPEG-XL lossless compression ratio of JPG files got a little bigger file size and memory than packJPG and Lepton, but my best suggestion is for PNG files and the supported programs.
+JPEG-XL can compress JPG and PNG files, even supports animations and lossless/lossy compression. JPEG-XL was implementated to the [supported softwares](https://jpegxl.info/), but due to the cons for Chrome version 110+ removed JPEG-XL and Firefox is only available version of Nightly or Librewolf needs to enable jxl via config. JPEG-XL lossless compression ratio of JPG files got a little bigger file size and memory than packJPG and Lepton, but my best suggestion is for PNG files and the supported programs.
 
 Default command:
 ```
@@ -285,12 +285,16 @@ ect -9 example.png
 
 Hardened commands:
 ```
-ect -80085 --allfilters-b --pal_sort=120 example.png
+ect -99999 --allfilters-b --pal_sort=120 example.png
 ```
 
 Note: When optimizing bigger picture resolutions, it may increase CPU and memory usage and all filters & pal sort is only for PNG files.
 
 You could enable `--mt-deflate --mt-file` to speed up process for increasing more CPU and memory usage.
+
+If you're using zip, enable `-zip`.
+
+If you're using g-zip, enable `-gzip`.
 
 Documentation: https://github.com/fhanau/Efficient-Compression-Tool/blob/master/doc/Manual.docx
 
@@ -326,7 +330,7 @@ scour -i input.svg -o output.svg --enable-viewboxing --enable-id-stripping \
   --enable-comment-stripping --shorten-ids --indent=none
 ```
 
-TIP: You could output SVGZ compressed file `-o output.svgz` and optimize using ECT: `ect -80085 -gzip output.svgz` to save file size.
+TIP: You could output SVGZ compressed file `-o output.svgz` and optimize using ECT: `ect -99999 -gzip output.svgz` to save file size.
 
 **gifsicle:**
 
@@ -382,7 +386,9 @@ mp4box -itags all=NULL -for-test -add example.h264 -new example.mp4
 
 * [UPX](https://github.com/upx/upx) - the Ultimate Packer for eXecutables
 * [Crinkler](https://github.com/runestubbe/Crinkler) - Crinkler is an executable file compressor (or rather, a compressing linker) for compressing small 32-bit Windows demoscene executables.
-* [Leanify](https://github.com/JayXon/Leanify)
+* [kkrunchy](http://www.farbrausch.de/~fg/kkrunchy/) - kkrunchy is a small exe packer primarily meant for 64k intros. ([source code](https://github.com/farbrausch/fr_public/tree/master/kkrunchy_k7))
+* [Leanify](https://github.com/JayXon/Leanify) - Lightweight lossless file minifier/optimizer
+* [CompactGUI](https://github.com/IridiumIO/CompactGUI) - Transparently compress active games and programs using Windows 10/11 APIs
 * [MSVC](https://visualstudio.microsoft.com/vs/features/cplusplus/) - Microsoft Visual C++
 * [GCC](https://gcc.gnu.org/) - the GNU Compiler Collection
 * [Clang](https://clang.llvm.org/) - a C language family frontend for LLVM
@@ -434,15 +440,53 @@ Windows XP: 1.3
 
 For running Windows executable files in Wine Linux, this means can't run program well.
 
+**Kkrunchy:**
+
+Kkrunchy can pack the file for executable files for Windows only. Any MSVC builds can pack work, otherwise it won't pack correct for using different build with different compiler than MSVC.
+
+***Please note that the packer may accept smaller than 1 MB to reduce sizes.***
+
+Kkrunchy command:
+```
+kkrunchy msvc_build.exe --out msvc_build-kk.exe
+```
+
+Best command:
+```
+kkrunchy --best msvc_build.exe --out msvc_build-kk.exe
+```
+
+After packing the file, it is no longer decompress back and under Win9X won't run for example old/new MSVC build.
+
+For leanifing kkrunchy compressed program, it is **not recommended** to remove 3.5 KB bytes, it may not work leanified with kkrunchied executable and it's best not to use Leanify.
+
 **Leanify:**
 
 ***Please do UPX compress first, before you head to Leanify and test the program***
 
-Leanify can remove only 512 bytes for Windows 32-bit and 64-bit UPX portable executable packed file for removing header after compress. This cannot unpack UPX packed file forever after Leanify shrinked UPX packed file, but it still runs ok.
+Leanify can remove only 512 bytes for Windows 32-bit and 64-bit UPX portable executable packed file with MSVC build for removing header after compress. This cannot unpack UPX packed file forever after Leanify shrinked UPX packed file, but it still runs okay.
 
 ```
 leanify upx_packed.exe
 ```
+
+**CompactGUI:**
+
+Compact GUI allows you to compress games and softwares on Windows.
+
+Before you compress the game or/and software, please see the reported community compression results of claimed compressed sizes on [here](https://github.com/IridiumIO/CompactGUI/wiki/Community-Compression-Results).
+
+Available of compression:
+
+**XPRESS4K**
+
+**XPRESS8K**
+
+**XPRESS16K**
+
+**LZX**
+
+For the new games or softwares that may require more rams and CPUs, I'd recommend picking XPRESS4K or XPRESS8K, you can pick whenever you like it depending on your computer like old games could be compressed by XPRESS16K or LZX. You can have look for the options description what it said: https://github.com/IridiumIO/CompactGUI#options
 
 **MSVC:**
 
