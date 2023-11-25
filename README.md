@@ -74,6 +74,18 @@ tta -e file.wav file.tta
 sac --encode --sparse-pcm --optimize=high file.wav file.sac
 ```
 
+**For alternative of FLAC optimization:**
+
+You can use [flaccid](https://github.com/chocolate42/flaccid) to minimize your FLAC files as possible from WAV or FLAC, but it takes very longer and slower than normal FLAC program.
+
+`workers` command as **threads**.
+
+FLACCID Hardened command:
+
+```
+flaccid --in example.flac --lax --out result.flac --peakset-window 48 --preserve-flac-metadata --queue 16384 --workers 8 --tweak 1 --merge 0 --analysis-apod 'subdivide_tukey(3)' --output-apod 'subdivide_tukey(9)' --analysis-comp mepl32r15 --output-comp mepl32r15 --mode peakset --blocksize-list 64,128,192,256,320,384,448,512,576,640,704,768,832,896,960,1024,1088,1152,1216,1280,1344,1408,1472,1536,1600,1664,1728,1792,1856,1920,1984,2048,2112,2176,2240,2304,2368,2432,2496,2560,2624,2688,2752,2816,2880,2944,3008,3072,3136,3200,3264,3328,3392,3456,3520,3584,3648,3712,3776,3840,3904,3968,4032,4096,4160,4224,4288,4352,4416,4480,4544,4608
+```
+
 **FFmpeg hardened commands:**
 ```
 ffmpeg -i file.wav -c:a flac -compression_level 12 -lpc_type cholesky -lpc_passes 8 -exact_rice_parameters 1 file.flac
@@ -202,6 +214,14 @@ aomenc -i original.y4m --lossless=1 --cpu-used=3 -o result.ivf
 ```
 ```
 ffmpeg -i original.y4m -c:v libaom-av1 -aom-params lossless=1 -cpu-used 3 -o result.ivf
+```
+
+TIP: If you want also encode lossless alpha video, the only video encoder to use is **Google VP9** or **other lossless video encoders** like (FFV1, UT Video, HuffYUV, QTRLE, FFVHUFF, MagicYUV)
+
+For example libvpx-vp9 alpha lossless video using FFmpeg, add command following:
+
+```
+-pix_fmt yuva420p
 ```
 
 ## Web
@@ -347,6 +367,14 @@ gifsicle example.gif
 * [PeaZip](https://peazip.github.io/)
 * [paq8px](https://github.com/hxim/paq8px)
 
+**7-Zip:**
+
+You can compress big files to .7z compressed file following by hardened command via CLI:
+
+```
+7z a -t7z -m0=LZMA -mmt=1 -mx9 -md=3840m -mfb=273 -ms=on -mqs=on -sccUTF-8 -bb0 -bse0 -bsp2 -mtc=on -mta=on output.7z file.txt
+```
+
 ## Mux
 
 * [MKVToolNix](https://mkvtoolnix.download)
@@ -391,6 +419,7 @@ mp4box -itags all=NULL -for-test -add example.h264 -new example.mp4
 * [CompactGUI](https://github.com/IridiumIO/CompactGUI) - Transparently compress active games and programs using Windows 10/11 APIs
 * [MSVC](https://visualstudio.microsoft.com/vs/features/cplusplus/) - Microsoft Visual C++
 * [GCC](https://gcc.gnu.org/) - the GNU Compiler Collection
+* [TCC](https://bellard.org/tcc/) - Tiny C Compiler
 * [Clang](https://clang.llvm.org/) - a C language family frontend for LLVM
 * [Rust](https://www.rust-lang.org/) - Empowering everyone to build reliable and efficient software.
 
@@ -501,6 +530,14 @@ cl /O1 example.c /link user32.lib
 If you want to compile example C file, command:
 ```
 gcc -Os -s -flto example.c
+```
+
+**TCC:**
+
+This is likely different than GCC, but it has a little minimum libraries, headers and others. It allows to compile for minimum size than GCC and run the old machines up to Windows 95 and later.
+
+```
+tcc example.c -o example
 ```
 
 **Clang:**
