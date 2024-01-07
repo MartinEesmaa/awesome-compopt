@@ -375,6 +375,24 @@ You can compress big files to .7z compressed file following by hardened command 
 7z a -t7z -m0=LZMA -mmt=1 -mx9 -md=3840m -mfb=273 -ms=on -mqs=on -sccUTF-8 -bb0 -bse0 -bsp2 -mtc=on -mta=on output.7z file.txt
 ```
 
+Or even graphical user interface can be seen of this photo:
+
+![7zgui](pictures/7zGUIbestcompression.png)
+
+**WinRAR:**
+
+You can compress using CLI:
+
+```
+rar a -m5 -md1024m -s output.rar file.txt
+```
+
+or
+
+You can compress using GUI:
+
+![winrargui](pictures/WinRARGUI.png)
+
 ## Mux
 
 * [MKVToolNix](https://mkvtoolnix.download)
