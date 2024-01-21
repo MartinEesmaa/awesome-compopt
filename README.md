@@ -33,7 +33,7 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 * [Meridian Lossless Packing](https://en.wikipedia.org/wiki/Meridian_Lossless_Packing) - Alternative same as Dolby TrueHD, but it is useful for DVD Audio and HD-DVD.
 * [LPCM](https://en.wikipedia.org/wiki/Pulse-code_modulation#Implementations) - Mandatory used in DVD and Blu-ray.
 * [WMAL](https://en.wikipedia.org/w/index.php?title=Windows_Media_Audio#Windows_Media_Audio_Lossless) - Windows Media Audio Lossless, best for legacy Windows & Microsoft hardwares.
-* [ATRAC3 AL](https://en.wikipedia.org/wiki/ATRAC#ATRAC_Advanced_Lossless) - Adaptive TRansform Acoustic Coding 3 Advanced Lossless, best for legacy Sony product &hardwares.
+* [ATRAC3 AL](https://en.wikipedia.org/wiki/ATRAC#ATRAC_Advanced_Lossless) - Adaptive TRansform Acoustic Coding 3 Advanced Lossless, best for legacy Sony product & hardwares.
 
 ### Repack compressor of lossy audio files
 * [packMP3](http://packjpg.encode.su/?page_id=19) - A compression program for further compressing MP3 audio files (most compatability and FOSS cross-platform)
@@ -73,6 +73,36 @@ mp4als -o1023 -a -b -7 -p -MP4 -v file.wav
 tta -e file.wav file.tta
 sac --encode --sparse-pcm --optimize=high file.wav file.sac
 ```
+
+**Tips:**
+
+For encoding Dolby TrueHD or MLP in FFmpeg, you can maximize file size to get compression ratio:
+
+```
+ffmpeg -i file.wav -c:a truehd -strict -2 -max_interval 128 -lpc_type 3 -codebook_search 100 -prediction_order 4 -lpc_passes 10 file.thd
+```
+
+For MLP encoder, change to `-c:a mlp` and make sure the file container is `.mlp`.
+
+It is little bit smaller compression ratio in FFmpeg than encoded TrueHD using Dolby Media Encoder of proprietary encoder software. See the list of file sizes from smallest to biggest.
+
+```
+239 123 080 BigBuckBunny-surround.thd // Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository)
+242 913 830 BigBuckBunny-surround-10passFF.thd // FFmpeg with 10 pass and hardened
+243 021 176 BigBuckBunny-surround-hardened.thd // FFmpeg with hardened only
+251 187 000 BigBuckBunny-surround-normal.thd // FFmpeg default TrueHD
+343 562 022 BigBuckBunny-Surround.wav // Uncompressed audio file
+```
+
+---
+
+For WavPack, you can try add additional command of blocksize to hardened command by example:
+
+```
+wavpack -x6hh --blocksize=131072 file.wav
+```
+
+Note of WavPack maximum blocksize is 131072. If your audio went compression lower ratio using too big or small blocksize than hardened command without blocksize, try it make less than 100000 or make small or don't add blocksize command.
 
 **For alternative of FLAC optimization:**
 
