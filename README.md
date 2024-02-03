@@ -54,7 +54,7 @@ TAK | ❌ | Windows | ✔️ (decode only) | ❌
 WavPack | ✔️ | Cross-platform | ✔️ | ✔️
 OptimFROG | ❌ | Windows, Mac, Linux, FreeBSD | ❌ | ❌
 LA | ❌ | Windows & Linux | ❌ | ❌
-Monkey's Audio | ❌ | Windows | ⚠️ (maximum 2 channels decode only) | ✔️
+Monkey's Audio | ✔️ | Windows, Mac & Linux | ⚠️ (maximum 2 channels decode only) | ✔️
 WMAL | ❌ | Windows | ⚠️ (partially decode support) | ❌
 MPEG-4 ALS | ✔️ | Cross-platform | ✔️ (decode only) | ❌
 TTA | ✔️ | Cross-platform | ✔️ | ❌
