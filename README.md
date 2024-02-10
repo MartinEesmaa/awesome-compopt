@@ -259,6 +259,7 @@ For example libvpx-vp9 alpha lossless video using FFmpeg, add command following:
 * [Tidy](https://github.com/htacg/tidy-html5)
 * [JSMin](https://github.com/douglascrockford/JSMin)
 * [wasm-opt](https://github.com/WebAssembly/binaryen#wasm-opt)
+* [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
 
 **Tidy:**
 
@@ -280,6 +281,22 @@ jsmin <example.js >example.min.js
 wasm-opt can optimize WebAssembly files:
 ```
 wasm-opt -Oz example.wasm -o example-min.wasm
+```
+
+**ArchiveBox:**
+
+You may need to install ArchiveBox as self-hosted web archive server on Docker system image for any OS (recommended) or other installations are available.
+
+Also, you can archive simple using GUI on browser or the command line on your working server machine.
+
+After that, you can archive anything URL links for example web contents, YouTube videos, git codes and more just like Web Archive from Archive.org.
+
+It saves snapshots after website is done archived on local machine and you can access it from local or remote network whenever you like wanted it.
+
+Example from CLI:
+
+```
+archivebox add https://martineesmaa.org
 ```
 
 ## Image
