@@ -445,6 +445,7 @@ You can compress using GUI:
 * [MKVToolNix](https://mkvtoolnix.download)
 * [FFmpeg](https://ffmpeg.org)
 * [mp4box](https://gpac.wp.imt.fr/)
+* [Media file container formats of mux overhead](#media-file-container-formats-of-mux-overhead)
 
 To optimize a little file sizes:
 
@@ -474,6 +475,50 @@ You can remove writing library and metadata:
 ```
 mp4box -itags all=NULL -for-test -add example.h264 -new example.mp4
 ```
+
+### Media file container formats of mux overhead: ###
+
+To optimize file size by output media container formats of supported video codecs, you need FFmpeg.
+
+**Matroska/MKV:**
+
+All you need is FFmpeg or MKVToolNix to mux into Matroska media container.
+
+Official Matroska of MKVToolnix supports only few video/audio formats, but FFmpeg supports almost all video or audio formats fit to Matroska container format.
+
+For FFmpeg, if you want to disable CRC32 protection to save little bit size, you can use command to apply for it:
+
+```
+ffmpeg -i example.mp4 -c copy -write_crc32 false result.mkv
+```
+
+Even subtitles were compressed default by zlib on MKVToolNix and FFmpeg.
+
+The best possible small size mux of Matroska is to go FFmpeg.
+
+After that, you can go to [mkvpropedit](#mux) to remove date, writing application and segment UID.
+
+**Windows Media/WMV:**
+
+If you want to optimize file to save little size bit, you need FFmpeg and optimize it:
+
+```
+ffmpeg -i Wildlife.wmv -c copy -fflags +bitexact -flags:v +bitexact -flags:a +bitexact -packet_size 24000 Wildlife-copy.wmv
+```
+
+.WMA (Audio only) and .ASF are also supported for muxing with copy stream.
+
+If the file container of WMV optimized (no loss quality, only stream copy) went smaller successfully than original WMV, you can try packet size by 65536, 23580, 23999 or other numbers to reduce file size best as possible.
+
+**Audio Video Interleave/AVI**:
+
+To optimize smallest size of AVI file, you can use:
+
+- [AVI Mux GUI](https://www.alexander-noe.com/video/amg/)
+
+- [FFmpeg](https://ffmpeg.org)
+
+AVI Mux GUI gives better to reduce mux overhead than native FFmpeg AVI muxer, but AVI Mux GUI and FFmpeg supports compatible video/audio codecs of AVI container.
 
 ## Executable
 
