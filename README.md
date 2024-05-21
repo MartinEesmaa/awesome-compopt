@@ -193,6 +193,7 @@ arc a -m0 VORBIS.arc -moggre example.ogg
 * [VVC](https://en.wikipedia.org/wiki/Versatile_Video_Coding)
 * [VP9](https://en.wikipedia.org/wiki/VP9)
 * [AV1](https://en.wikipedia.org/wiki/AV1)
+* [DOSBox](https://dosbox.org)
 
 **AVC:**
 
@@ -253,6 +254,30 @@ For example libvpx-vp9 alpha lossless video using FFmpeg, add command following:
 ```
 -pix_fmt yuva420p
 ```
+
+**DOSBox/ZMBV:**
+
+ZMBV (Zip Motion Blocks Video) codec is used to encode DOS display screen about maximum screen size of 640x200 using DOSBox with Stereo channels (16-bit) and unlimited target FPS at your current working screen. Normally it's use of 320x200 DOS screen size, but upscaling will make 2x better quality.
+
+To encode lossless video to ZMBV video codec via FFmpeg:
+
+```
+ffmpeg -i sample-dos.avi -c:v zmbv -pix_fmt pal8 result.avi
+```
+
+If you screen recording manually in web browsers via archive.org or OBS Studio for example only screen, you can downscale the video, but make sure if you're only downscaling with only DOS Screen:
+
+```
+ffmpeg -i recorded-obs.mkv -c:v libx264 -crf 0 -vf cropdetect -s:v 640:200 -sws_flags lanczos+full_chroma_inp output.avi
+```
+
+If you're unsure, you can use cropdetect with NULL which is usable static for at all times:
+
+```
+ffmpeg -i recorded-obs.mkv -vf cropdetect -f null /dev/null
+```
+
+If you're using Windows, replace `/dev/null` by NULL. After that you can insert manually crop command and remove cropdetect filter.
 
 ## Web
 
