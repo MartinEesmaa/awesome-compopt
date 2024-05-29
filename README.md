@@ -521,6 +521,22 @@ Even subtitles were compressed default by zlib on MKVToolNix and FFmpeg.
 
 The best possible small size mux of Matroska is to go FFmpeg.
 
+If you want still get small mux overhead, you can optimize using mkclean.
+
+* [mkclean](https://www.matroska.org/downloads/mkclean.html)
+
+Optimize matroska file using mkclean:
+
+```
+mkclean --doctype 2 --optimize example.mkv
+```
+
+For this example command, this will use smallest mux overhead to force using Matroska version 2 by adding `--doctype 2`, but you can change to Matroska version 4 as latest by `--doctype 6` on mkclean.
+
+If you would like to get more little bit small mux overhead, you can add `--unsafe` for not output elements like no CRC32 checksums.
+
+This will output into clean.example.mkv without your additional output filename or you can add still output filename.
+
 After that, you can go to [mkvpropedit](#mux) to remove date, writing application and segment UID.
 
 **Windows Media/WMV:**
