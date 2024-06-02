@@ -539,6 +539,50 @@ This will output into clean.example.mkv without your additional output filename 
 
 After that, you can go to [mkvpropedit](#mux) to remove date, writing application and segment UID.
 
+**MPEG-4 Part 14/MP4:**
+
+If you would like to optimize it of MPEG-4, you can use mp4box to optimize more
+
+MP4Box:
+
+```
+mp4box -for-test -add sample.mp4 -new optimized.mp4
+```
+
+FFmpeg:
+
+```
+ffmpeg -i sample.mp4 -c copy -movflags empty_moov -empty_hdlr_name 1 -write_btrt 0 sample-optimized.mp4
+```
+
+**Quicktime/MOV:**
+
+Optimize using mp4box:
+
+```
+mp4box -for-test -zmov -add sample.mp4 -new sample.mov
+```
+
+**Tip for MP4 and MOV containers:**
+
+You can get mux overhead smaller by extracting from any container to raw video & audio files in FFmpeg or MP4Box, after that do in mp4box:
+
+```
+ffmpeg -i muxed.mp4 -c copy video.h264
+ffmpeg -i muxed.mp4 -c copy audio.aac
+```
+
+```
+mp4box -raw 1 muxed.mp4 -out video.h264
+mp4box -raw 2 muxed.mp4 -out audio.aac
+```
+
+```
+mp4box -for-test -add video.h264+audio.aac -new optimizedbest.mp4
+```
+
+**Note:** mp4box supports only MPEG-4 Part 14 and QuickTime format container for mux & demux.
+
 **Windows Media/WMV:**
 
 If you want to optimize file to save little size bit, you need FFmpeg and optimize it:
