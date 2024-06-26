@@ -583,6 +583,14 @@ mp4box -for-test -add video.h264+audio.aac -new optimizedbest.mp4
 
 **Note:** mp4box supports only MPEG-4 Part 14 and QuickTime format container for mux & demux.
 
+**Tip:** If you already done muxing video or/and audio using mp4box or FFmpeg, you can use Bento4's mp4compact.
+
+```
+mp4compact optimizedbest.mp4 optimizedbest-1.mp4
+```
+
+This command converts stsz tables into stz2 tables to create more compact MP4 files, also reduces file size for output after that.
+
 **Windows Media/WMV:**
 
 If you want to optimize file to save little size bit, you need FFmpeg and optimize it:
