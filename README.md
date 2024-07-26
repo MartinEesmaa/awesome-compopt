@@ -747,7 +747,7 @@ tcc example.c -o example
 
 If you want to compile example C file, command:
 ```
-clang -s -Os example.c
+clang -Os example.c
 ```
 
 **Rust:**
