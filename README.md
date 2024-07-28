@@ -222,7 +222,9 @@ Encode lossless video via Fraunhofer HHI vvenc encoder:
 vvencffapp --CostMode lossless -i original.y4m --preset slower -b result.266
 ```
 
-For x266, Multicoreware is releasing x266 encoder soon in H2 2023, but future versions will support lossless. Learn more: https://multicorewareinc.com/faq-x266-webinar/
+For x266, Multicoreware is releasing x266 encoder soon in H2 2023 (postponed), but future versions will support lossless. Learn more: https://multicorewareinc.com/faq-x266-webinar/
+
+Update about Multicoreware x266 is delayed and postponed with no updates & announcements until it's released.
 
 **VP9:**
 
