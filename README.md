@@ -446,7 +446,7 @@ gifsicle example.gif
 You can compress big files to .7z compressed file following by hardened command via CLI:
 
 ```
-7z a -t7z -m0=LZMA -mmt=1 -mx9 -md=3840m -mfb=273 -ms=on -mqs=on -sccUTF-8 -bb0 -bse0 -bsp2 -mtc=on -mta=on output.7z file.txt
+7z a -t7z -m0=LZMA -mmt=1 -mx9 -md=3840m -mfb=273 -ms=on -mqs=on -sccUTF-8 -mtc=on -mta=on output.7z file.txt
 ```
 
 Or even graphical user interface can be seen of this photo:
