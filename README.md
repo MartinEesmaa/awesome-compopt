@@ -193,7 +193,7 @@ arc a -m0 VORBIS.arc -moggre example.ogg
 * [VVC](https://en.wikipedia.org/wiki/Versatile_Video_Coding)
 * [VP9](https://en.wikipedia.org/wiki/VP9)
 * [AV1](https://en.wikipedia.org/wiki/AV1)
-* [DOSBox](https://dosbox.org)
+* [DOSBox](https://dosbox.com)
 
 **AVC:**
 
