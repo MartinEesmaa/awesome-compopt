@@ -353,6 +353,14 @@ lepton -skipvalidate example.jpg
 lepton-slow-best-ratio -skipvalidate example.jpg
 ```
 
+**Alternatives to Lepton programming implementation:**
+
+If you're looking for an active project implementation programming language of Lepton, you can use Microsoft's rust code:
+
+https://github.com/microsoft/lepton_jpeg_rust
+
+This is an active repository than original deprecated Dropbox's repository.
+
 **JPEG-XL:**
 
 JPEG-XL can compress JPG and PNG files, even supports animations and lossless/lossy compression. JPEG-XL was implementated to the [supported softwares](https://jpegxl.info/), but due to the cons for Chrome version 110+ removed JPEG-XL and Firefox is only available version of Nightly or Librewolf needs to enable jxl via config. JPEG-XL lossless compression ratio of JPG files got a little bigger file size and memory than packJPG and Lepton, but my best suggestion is for PNG files and the supported programs.
@@ -448,6 +456,8 @@ You can compress big files to .7z compressed file following by hardened command 
 ```
 7z a -t7z -m0=LZMA -mmt=1 -mx9 -md=3840m -mfb=273 -ms=on -mqs=on output.7z file.txt
 ```
+
+Note: Some times using p7zip may improve compression ratio better than official version of 7-Zip.
 
 Or even graphical user interface can be seen of this photo:
 
