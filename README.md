@@ -63,7 +63,7 @@ ATRAC3 AL | ❌ | Windows, macOS | ✔️ (decode only) | ❌
 
 **Hardened audio internal program commands:**
 ```
-flac -8ep -r 15 -l 32 --lax file.wav
+flac -8ep -r 15 -l 32 --lax -P0 file.wav
 takc -e -p4m file.wav
 wavpack -x6hh file.wav
 ofr --preset max --seek slow file.wav
@@ -458,6 +458,8 @@ You can compress big files to .7z compressed file following by hardened command 
 ```
 
 Note: Some times using p7zip may improve compression ratio better than official version of 7-Zip.
+
+On p7zip version, you may need to remove `-md` argument to avoid invalid error argument of console.
 
 Or even graphical user interface can be seen of this photo:
 
