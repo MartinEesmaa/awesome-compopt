@@ -454,7 +454,7 @@ gifsicle example.gif
 You can compress big files to .7z compressed file following by hardened command via CLI:
 
 ```
-7z a -t7z -m0=LZMA -mmt=1 -mx9 -md=3840m -mfb=273 -ms=on -mqs=on output.7z file.txt
+7z a -m0=LZMA -mmt=1 -mx9 -md=3840m -mfb=273 -ms=on -mqs=on output.7z file.txt
 ```
 
 Note: Some times using p7zip may improve compression ratio better than official version of 7-Zip.
@@ -769,7 +769,7 @@ clang -Os example.c
 You can add following lines in config.toml:
 ```
 [profile.release]
-opt-level = 3
+opt-level = 2
 lto = true
 ```
 
