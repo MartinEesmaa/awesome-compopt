@@ -454,7 +454,7 @@ gifsicle example.gif
 You can compress big files to .7z compressed file following by hardened command via CLI:
 
 ```
-7z a -m0=LZMA -mmt1 -mx9 -md=3840m -mfb=273 -mqs=on output.7z file.txt
+7z a -m0=LZMA -mmt1 -mx9 -md3840m -mfb273 -mqs=on output.7z file.txt
 ```
 
 Note: Some times using p7zip may improve compression ratio better than official version of 7-Zip.
