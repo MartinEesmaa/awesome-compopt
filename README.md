@@ -25,7 +25,7 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 * [LA](https://web.archive.org/web/20210501091140/http://www.lossless-audio.com/) - Lossless Audio Codec, best alternative to OptimFROG
 * [Monkey's Audio](https://monkeysaudio.com/) - Monkey's Audio, best for compression well.
 * [MP4-ALS](https://en.wikipedia.org/wiki/Audio_Lossless_Coding) - MPEG-4 Audio Lossless, best for multichannel compression ratio.
-* [TTA](http://tausoft.org/wiki/True_Audio_Codec_Overview) - True Audio Lossless, best for ultra low latency.
+* [TTA](https://tausoft.org/en/true-audio-%d0%ba%d0%be%d0%b4%d0%b5%d0%ba-tta/) - True Audio Lossless, best for ultra low latency.
 * [SAC](https://github.com/slmdev/sac) - State of the Art Lossless Codec, best alternative to OptimFROG.
 ### Physical/hardware media lossless compressors
 * [Dolby TrueHD](https://en.wikipedia.org/wiki/Dolby_TrueHD) - Used in Ultra HD Blu-ray releases, but some publishers uses that audio codec.
