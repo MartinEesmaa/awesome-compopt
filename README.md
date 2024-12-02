@@ -281,6 +281,10 @@ ffmpeg -i recorded-obs.mkv -vf cropdetect -f null /dev/null
 
 If you're using Windows, replace `/dev/null` by NULL. After that you can insert manually crop command and remove cropdetect filter.
 
+Also if you want to make smaller file size from ZMBV compressed video, you can use 7-Zip to compress maximize as possible without loss such as video quality or/and colorspace.
+
+Otherwise if you want to encode to lossless video codec, it may not match MD5 sums due frames color loss or different colorspace.
+
 ## Web
 
 * [Tidy](https://github.com/htacg/tidy-html5)
