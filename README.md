@@ -86,6 +86,20 @@ For MLP encoder, change to `-c:a mlp` and make sure the file container is `.mlp`
 
 It is little bit smaller compression ratio in FFmpeg than encoded TrueHD using Dolby Media Encoder of proprietary encoder software. See the list of file sizes from smallest to biggest.
 
+### Stereo
+
+Small sizes | File names | Comments
+--- | --- | ---|
+111 900 514 | BigBuckBunny-stereo.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository)
+117 756 582 | BigBuckBunny-stereo-10passFF.thd | FFmpeg with 10 pass and hardened
+117 821 850 | BigBuckBunny-stereo-hardened.thd |  FFmpeg with hardened only
+121 831 326 | BigBuckBunny-stereo-normal.thd | FFmpeg default TrueHD
+229 040 102 | BigBuckBunny-stereo.wav | Uncompressed audio file
+
+---
+
+### Surround
+
 Small sizes | File names | Comments
 --- | --- | ---|
 239 123 080 | BigBuckBunny-surround.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository)
