@@ -94,7 +94,7 @@ Small sizes | File names | Comments
 117 756 582 | BigBuckBunny-stereo-10passFF.thd | FFmpeg with 10 pass and hardened
 117 821 850 | BigBuckBunny-stereo-hardened.thd |  FFmpeg with hardened only
 121 831 326 | BigBuckBunny-stereo-normal.thd | FFmpeg default TrueHD
-229 040 102 | BigBuckBunny-stereo.wav | Uncompressed audio file
+229 040 102 | BigBuckBunny-stereo.wav | Uncompressed audio file (s32, 24-bit)
 
 ---
 
@@ -106,7 +106,7 @@ Small sizes | File names | Comments
 242 913 830 | BigBuckBunny-surround-10passFF.thd | FFmpeg with 10 pass and hardened
 243 021 176 | BigBuckBunny-surround-hardened.thd |  FFmpeg with hardened only
 251 187 000 | BigBuckBunny-surround-normal.thd | FFmpeg default TrueHD
-343 562 022 | BigBuckBunny-Surround.wav | Uncompressed audio file
+687 123 942 | BigBuckBunny-Surround.wav | Uncompressed audio file (s32, 24-bit)
 
 ---
 
