@@ -390,10 +390,12 @@ cjxl -d 0 example.png example.jxl
 
 Hardened command:
 ```
-cjxl -d 0 -e 9 -E 11 -g 3 -I 100 example.png example.jxl
+cjxl -d 0 -e 10 -E 11 -g 3 -I 100 example.png example.jxl
 ```
 
-If you would like to get best file size possible of effort 10, you could add command `--allow_expert_options -e 10`, this could take very slower process and may increase memory usage.
+For older versions of libjxl, you could add command `--allow_expert_options -e 10`, this could take very slower process and may increase memory usage.
+
+Now newer versions of libjxl can go effort up to 10, but still you can add `--allow_expert_options -e 11` to maximize smaller than less efforts.
 
 **ect:**
 
@@ -412,9 +414,9 @@ Note: When optimizing bigger picture resolutions, it may increase CPU and memory
 
 You could enable `--mt-deflate --mt-file` to speed up process for increasing more CPU and memory usage.
 
-If you're using zip, enable `-zip`.
+If it's compressed zip method, enable `-zip`.
 
-If you're using g-zip, enable `-gzip`.
+If it's compressed G-Zip, enable `-gzip`.
 
 Documentation: https://github.com/fhanau/Efficient-Compression-Tool/blob/master/doc/Manual.docx
 
