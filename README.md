@@ -46,20 +46,22 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 
 ### Availability & compatability
 
-Compressors | FOSS | Platform | FFmpeg (cross-platform) | MPX DOS
---- | --- | --- | --- | --- |
-FLAC | ✔️ | Cross-platform | ✔️ | ✔️
-ALAC | ✔️ | Cross-platform | ✔️ | ❌
-TAK | ❌ | Windows | ✔️ (decode only) | ❌
-WavPack | ✔️ | Cross-platform | ✔️ | ✔️
-OptimFROG | ❌ | Windows, Mac, Linux, FreeBSD | ❌ | ❌
-LA | ❌ | Windows & Linux | ❌ | ❌
-Monkey's Audio | ✔️ | Cross-platform | ⚠️ (maximum 2 channels decode only) | ✔️
-WMAL | ❌ | Windows | ⚠️ (partially decode support) | ❌
-MPEG-4 ALS | ✔️ | Cross-platform | ✔️ (decode only) | ❌
-TTA | ✔️ | Cross-platform | ✔️ | ❌
-SAC | ✔️ | Cross-platform | ❌ | ❌
-ATRAC3 AL | ❌ | Windows, macOS | ✔️ (decode only) | ❌
+Compressors | FOSS | Platform | FFmpeg (cross-platform) | MPX DOS | Active development
+--- | --- | --- | --- | --- | --- |
+FLAC | ✔️ | Cross-platform | ✔️ | ✔️ | ✔️
+ALAC | ✔️ | Cross-platform | ✔️ | ❌ | ❌
+TAK | ❌ | Windows | ✔️ (decode only) | ❌ | ❌
+WavPack | ✔️ | Cross-platform | ✔️ | ✔️ | ✔️
+OptimFROG | ❌ | Windows, Mac, Linux, FreeBSD | ❌ | ❌ | ❌
+LA | ❌ | Windows & Linux | ❌ | ❌ | ❌
+Monkey's Audio | ✔️ | Cross-platform | ⚠️ (maximum 2 channels decode only) | ✔️ | ✔️
+WMAL | ❌ | Windows | ⚠️ (partially decode support) | ❌ | ❌
+MPEG-4 ALS | ✔️ | Cross-platform | ✔️ (decode only) | ❌ | ❌
+TTA | ✔️ | Cross-platform | ✔️ | ❌ | ❌
+SAC | ✔️ | Cross-platform | ❌ | ❌ | ✔️
+ATRAC3 AL | ❌ | Windows, macOS | ✔️ (decode only) | ❌ | ❌
+
+Active development is ticked when it's last two years commits.
 
 **Hardened audio internal program commands:**
 ```
