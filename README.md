@@ -470,6 +470,7 @@ gifsicle example.gif
 * [FreeArc](https://web.archive.org/web/20160124195439/http://freearc.org/)
 * [PeaZip](https://peazip.github.io/)
 * [paq8px](https://github.com/hxim/paq8px)
+* [precomp-cpp](https://github.com/schnaader/precomp-cpp)
 
 **7-Zip:**
 
@@ -500,6 +501,24 @@ or
 You can compress using GUI:
 
 ![winrargui](pictures/WinRARGUI.png)
+
+**precomp-cpp:**
+
+Precomp, C++ version - further compress already compressed files.
+
+***IMPORTANT: This is an alpha version, be sure to double check to compare diffs are same between original compressed and recompressed decompressed file are identical.***
+
+**Note: Only a CLI terminal usage**.
+
+It supports to read already compressed archived files and recompressesing to improve the compression ratio by
+analyzing such as ZIP files, BZip2, SWF, MP3 (packmp3), JPG (packjpg), G-Zip and more, it will result packed
+into default recompressed LZMA2 default compression of PCF extension.
+
+Default command:
+
+```
+precomp example.zip
+```
 
 ## Mux
 
