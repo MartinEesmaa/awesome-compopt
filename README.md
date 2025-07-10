@@ -94,6 +94,7 @@ Small sizes | File names | Comments
 --- | --- | ---|
 111 900 514 | BigBuckBunny-stereo.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository)
 112 916 608 | BigBuckBunny-stereo.mlp | Dolby Media Encoder SE (Dolby Media Producer, 2010)
+117 753 716 | BigBuckBunny-stereo-16passFF-0po.thd | FFmpeg with 16 pass and hardened (zero prediction result)
 117 756 582 | BigBuckBunny-stereo-10passFF.thd | FFmpeg with 10 pass and hardened
 117 821 850 | BigBuckBunny-stereo-hardened.thd |  FFmpeg with hardened only
 121 831 326 | BigBuckBunny-stereo-normal.thd | FFmpeg default TrueHD
@@ -107,6 +108,7 @@ Small sizes | File names | Comments
 --- | --- | ---|
 239 123 080 | BigBuckBunny-surround.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository)
 239 389 532 | BigBuckBunny-surround.mlp | Dolby Media Encoder SE (Dolby Media Producer, 2010)
+242 768 082 | BigBuckBunny-surround.10passFF-0po.thd | FFmpeg with 10 pass and hardened (zero prediction result)
 242 913 830 | BigBuckBunny-surround-10passFF.thd | FFmpeg with 10 pass and hardened
 243 021 176 | BigBuckBunny-surround-hardened.thd |  FFmpeg with hardened only
 251 187 000 | BigBuckBunny-surround-normal.thd | FFmpeg default TrueHD
