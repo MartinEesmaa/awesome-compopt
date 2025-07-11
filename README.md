@@ -65,7 +65,7 @@ Active development is ticked when it's last two years commits.
 
 **Hardened audio internal program commands:**
 ```
-flac -8ep -r 15 -l 32 --lax -P0 file.wav
+flac -8epr 15 -l 32 --lax -P0 file.wav
 takc -e -p4m file.wav
 wavpack -x6hh file.wav
 ofr --preset max --seek slow file.wav
