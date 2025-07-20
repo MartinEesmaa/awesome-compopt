@@ -796,7 +796,7 @@ gcc -Os -s -flto example.c
 
 **TCC:**
 
-This is likely different than GCC, but it has a little minimum libraries, headers and others. It allows to compile for minimum size than GCC and run the old machines up to Windows 95 and later.
+This is likely different than GCC, but it has a little minimum libraries, headers and others. It allows to compile for minimum size than GCC and run the old machines up to Windows 95 and later, also Linux too.
 
 ```
 tcc example.c -o example
