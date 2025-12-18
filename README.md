@@ -17,7 +17,7 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 *The audio compressors is for use lossless music and speech audio files.*
 
 ### Lossless compressors
-* [FLAC](https://xiph.org/flac/) - Free Lossless Audio Codec, best for compatability
+* [FLAC](https://xiph.org/flac/) - Free Lossless Audio Codec, best for compatibility
 * [ALAC](https://en.wikipedia.org/wiki/Apple_Lossless_Audio_Codec) - Apple Lossless Audio Codec, best for Apple legacy devices.
 * [TAK](http://thbeck.de/Tak/Tak.html) - Tom's Lossless audio Kompressor, best for speed of encode & decode
 * [WavPack](https://wavpack.com) - Wave Packer, best for DSD and 32-bit float IEEE
@@ -36,7 +36,7 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 * [ATRAC3 AL](https://en.wikipedia.org/wiki/ATRAC#ATRAC_Advanced_Lossless) - Adaptive TRansform Acoustic Coding 3 Advanced Lossless, best for legacy Sony product & hardwares.
 
 ### Repack compressor of lossy audio files
-* [packMP3](http://packjpg.encode.su/?page_id=19) - A compression program for further compressing MP3 audio files (most compatability and FOSS cross-platform)
+* [packMP3](http://packjpg.encode.su/?page_id=19) - A compression program for further compressing MP3 audio files (most compatibility and FOSS cross-platform)
 * [mpz](https://mega.nz/file/f08U0aAC#jPgr1vdMAi8cXYEyiQTXIQeE7bD5jgxuU8tnEYrOzm8) - Sound Slimmer of MP3 repack compressor, but the development ended in 2007 (trialware)
 * [OGGRE](https://darckrepacks.com/files/file/262-oggre/) - OGGRE is a vorbis lossless compressor (freeware)
 
@@ -44,7 +44,7 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 * [MP3packer](https://wiki.hydrogenaud.io/index.php/MP3packer) - MP3packer is a program which can rearrange the data within an MP3 to fulfill specific goals for reducing 2-10% from CBR to VBR without a loss quality and can rearrange back anytime for CBR or VBR MP3 audio files, but likely optimizer.
 * [OptiVorbis](https://github.com/OptiVorbis/OptiVorbis) - Library and application for lossless, format-preserving, two-pass optimization and repair of Vorbis data, reducing its size without altering any audio information.
 
-### Availability & compatability
+### Availability & compatibility
 
 Compressors | FOSS | Platform | FFmpeg (cross-platform) | MPX DOS | Active development
 --- | --- | --- | --- | --- | --- |
@@ -362,7 +362,7 @@ archivebox add https://martineesmaa.org
 
 **packJPG:**
 
-packJPG can compress JPG files fast, most compatability and cross-platform for desktop operating systems only.
+packJPG can compress JPG files fast, most compatibility and cross-platform for desktop operating systems only.
 
 ```
 packjpg example.jpg
@@ -723,7 +723,7 @@ See the Crinkler documentation: https://github.com/runestubbe/Crinkler/blob/mast
 
 If your code wants to target subsystem Windows, change from CONSOLE to WINDOWS.
 
-For targetting only output EXE file to operating systems using Crinkler for last compatability OS:
+For targetting only output EXE file to operating systems using Crinkler for last compatibility OS:
 
 Windows 2000: 1.1
 
