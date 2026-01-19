@@ -290,7 +290,7 @@ ffmpeg -i sample-dos.avi -c:v zmbv -pix_fmt pal8 result.avi
 If you screen recording manually in web browsers via archive.org or OBS Studio for example only screen, you can downscale the video, but make sure if you're only downscaling with only DOS Screen:
 
 ```
-ffmpeg -i recorded-obs.mkv -c:v libx264 -crf 0 -vf cropdetect -s:v 640:200 -sws_flags lanczos+full_chroma_inp output.avi
+ffmpeg -i recorded-obs.mkv -c:v libx264 -crf 0 -vf cropdetect -s:v 640:200 -sws_flags neighbor output.avi
 ```
 
 If you're unsure, you can use cropdetect with NULL which is usable static for at all times:
