@@ -1,10 +1,13 @@
 # Awesome archive compressors & optimizers
+
 A list of the awesome archive compressor and optimizer programs.
 
 ## Contributing
+
 You're welcome to add additional compressor/optimizer tools and anything by a pull request.
 
 ## Table of contents
+
 - [Audio](#audio)
 - [Video](#video)
 - [Web](#web)
@@ -14,57 +17,64 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 - [Executable](#executable)
 
 ## Audio
+
 *The audio compressors is for use lossless music and speech audio files.*
 
 ### Lossless compressors
-* [FLAC](https://xiph.org/flac/) - Free Lossless Audio Codec, best for compatibility
-* [ALAC](https://en.wikipedia.org/wiki/Apple_Lossless_Audio_Codec) - Apple Lossless Audio Codec, best for Apple legacy devices.
-* [TAK](http://thbeck.de/Tak/Tak.html) - Tom's Lossless audio Kompressor, best for speed of encode & decode
-* [WavPack](https://wavpack.com) - Wave Packer, best for DSD and 32-bit float IEEE
-* [OptimFROG](http://losslessaudio.org/) - Optim Frog, best for file size of maximum preset
-* [LA](https://web.archive.org/web/20210501091140/http://www.lossless-audio.com/) - Lossless Audio Codec, best alternative to OptimFROG
-* [Monkey's Audio](https://monkeysaudio.com/) - Monkey's Audio, best for compression well.
-* [MP4-ALS](https://en.wikipedia.org/wiki/Audio_Lossless_Coding) - MPEG-4 Audio Lossless, best for multichannel compression ratio.
-* [TTA](https://tausoft.org/en/true-audio-%d0%ba%d0%be%d0%b4%d0%b5%d0%ba-tta/) - True Audio Lossless, best for ultra low latency.
-* [SAC](https://github.com/slmdev/sac) - State of the Art Lossless Codec, best alternative to OptimFROG.
+
+- [FLAC](https://xiph.org/flac/) - Free Lossless Audio Codec, best for compatibility
+- [ALAC](https://en.wikipedia.org/wiki/Apple_Lossless_Audio_Codec) - Apple Lossless Audio Codec, best for Apple legacy devices.
+- [TAK](http://thbeck.de/Tak/Tak.html) - Tom's Lossless audio Kompressor, best for speed of encode & decode
+- [WavPack](https://wavpack.com) - Wave Packer, best for DSD and 32-bit float IEEE
+- [OptimFROG](http://losslessaudio.org/) - Optim Frog, best for file size of maximum preset
+- [LA](https://web.archive.org/web/20210501091140/http://www.lossless-audio.com/) - Lossless Audio Codec, best -lternative to OptimFROG
+- [Monkey's Audio](https://monkeysaudio.com/) - Monkey's Audio, best for compression well.
+- [MP4-ALS](https://en.wikipedia.org/wiki/Audio_Lossless_Coding) - MPEG-4 Audio Lossless, best for multichannel -ompression ratio.
+- [TTA](https://tausoft.org/en/true-audio-%d0%ba%d0%be%d0%b4%d0%b5%d0%ba-tta/) - True Audio Lossless, best for ultra low latency.
+- [SAC](https://github.com/slmdev/sac) - State of the Art Lossless Codec, best alternative to OptimFROG.
+
 ### Physical/hardware media lossless compressors
-* [Dolby TrueHD](https://en.wikipedia.org/wiki/Dolby_TrueHD) - Used in Ultra HD Blu-ray releases, but some publishers uses that audio codec.
-* [DTS-HD Master Audio](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio) - Most popular for the Bluray releases.
-* [Meridian Lossless Packing](https://en.wikipedia.org/wiki/Meridian_Lossless_Packing) - Alternative same as Dolby TrueHD, but it is useful for DVD Audio and HD-DVD.
-* [LPCM](https://en.wikipedia.org/wiki/Pulse-code_modulation#Implementations) - Mandatory used in DVD and Blu-ray, but for DVD it may not include LPCM for some physical players like portable & softwares.
-* [WMAL](https://en.wikipedia.org/w/index.php?title=Windows_Media_Audio#Windows_Media_Audio_Lossless) - Windows Media Audio Lossless, best for legacy Windows & Microsoft hardwares.
-* [ATRAC3 AL](https://en.wikipedia.org/wiki/ATRAC#ATRAC_Advanced_Lossless) - Adaptive TRansform Acoustic Coding 3 Advanced Lossless, best for legacy Sony product & hardwares.
+
+- [Dolby TrueHD](https://en.wikipedia.org/wiki/Dolby_TrueHD) - Used in Ultra HD Blu-ray releases, but some publishers uses that audio codec.
+- [DTS-HD Master Audio](https://en.wikipedia.org/wiki/DTS-HD_Master_Audio) - Most popular for the Bluray releases.
+- [Meridian Lossless Packing](https://en.wikipedia.org/wiki/Meridian_Lossless_Packing) - Alternative same as Dolby TrueHD, but it is useful for DVD Audio and HD-DVD.
+- [LPCM](https://en.wikipedia.org/wiki/Pulse-code_modulation#Implementations) - Mandatory used in DVD and Blu-ray, but for DVD it may not include LPCM for some physical players like portable & softwares.
+- [WMAL](https://en.wikipedia.org/w/index.php?title=Windows_Media_Audio#Windows_Media_Audio_Lossless) - Windows Media Audio Lossless, best for legacy Windows & Microsoft hardwares.
+- [ATRAC3 AL](https://en.wikipedia.org/wiki/ATRAC#ATRAC_Advanced_Lossless) - Adaptive TRansform Acoustic Coding 3 Advanced Lossless, best for legacy Sony product & hardwares.
 
 ### Repack compressor of lossy audio files
-* [packMP3](http://packjpg.encode.su/?page_id=19) - A compression program for further compressing MP3 audio files (most compatibility and FOSS cross-platform)
-* [mpz](https://mega.nz/file/f08U0aAC#jPgr1vdMAi8cXYEyiQTXIQeE7bD5jgxuU8tnEYrOzm8) - Sound Slimmer of MP3 repack compressor, but the development ended in 2007 (trialware)
-* [OGGRE](https://darckrepacks.com/files/file/262-oggre/) - OGGRE is a vorbis lossless compressor (freeware)
+
+- [packMP3](http://packjpg.encode.su/?page_id=19) - A compression program for further compressing MP3 audio files (most compatibility and FOSS cross-platform)
+- [mpz](https://mega.nz/file/f08U0aAC#jPgr1vdMAi8cXYEyiQTXIQeE7bD5jgxuU8tnEYrOzm8) - Sound Slimmer of MP3 repack compressor, but the development ended in 2007 (trialware)
+- [OGGRE](https://darckrepacks.com/files/file/262-oggre/) - OGGRE is a vorbis lossless compressor (freeware)
 
 ### Optimizers
-* [MP3packer](https://wiki.hydrogenaud.io/index.php/MP3packer) - MP3packer is a program which can rearrange the data within an MP3 to fulfill specific goals for reducing 2-10% from CBR to VBR without a loss quality and can rearrange back anytime for CBR or VBR MP3 audio files, but likely optimizer.
-* [OptiVorbis](https://github.com/OptiVorbis/OptiVorbis) - Library and application for lossless, format-preserving, two-pass optimization and repair of Vorbis data, reducing its size without altering any audio information.
+
+- [MP3packer](https://wiki.hydrogenaud.io/index.php/MP3packer) - MP3packer is a program which can rearrange the data within an MP3 to fulfill specific goals for reducing 2-10% from CBR to VBR without a loss quality and can rearrange back anytime for CBR or VBR MP3 audio files, but likely optimizer.
+- [OptiVorbis](https://github.com/OptiVorbis/OptiVorbis) - Library and application for lossless, format-preserving, two-pass optimization and repair of Vorbis data, reducing its size without altering any audio information.
 
 ### Availability & compatibility
 
-Compressors | FOSS | Platform | FFmpeg (cross-platform) | MPX DOS | Active development
---- | --- | --- | --- | --- | --- |
-FLAC | ✔️ | Cross-platform | ✔️ | ✔️ | ✔️
-ALAC | ✔️ | Cross-platform | ✔️ | ❌ | ❌
-TAK | ❌ | Windows | ✔️ (decode only) | ❌ | ❌
-WavPack | ✔️ | Cross-platform | ✔️ | ✔️ | ✔️
-OptimFROG | ❌ | Windows, Mac, Linux, FreeBSD | ❌ | ❌ | ❌
-LA | ❌ | Windows & Linux | ❌ | ❌ | ❌
-Monkey's Audio | ✔️ | Cross-platform | ⚠️ (maximum 2 channels decode only) | ✔️ | ✔️
-WMAL | ❌ | Windows | ⚠️ (partially decode support) | ❌ | ❌
-MPEG-4 ALS | ✔️ | Cross-platform | ✔️ (decode only) | ❌ | ❌
-TTA | ✔️ | Cross-platform | ✔️ | ❌ | ❌
-SAC | ✔️ | Cross-platform | ❌ | ❌ | ✔️
-ATRAC3 AL | ❌ | Windows, macOS | ✔️ (decode only) | ❌ | ❌
+| Compressors | FOSS | Platform | FFmpeg (cross-platform) | MPX DOS | Active development |
+| --- | --- | --- | --- | --- | --- |
+| FLAC | ✔️ | Cross-platform | ✔️ | ✔️ | ✔️ |
+| ALAC | ✔️ | Cross-platform | ✔️ | ❌ | ❌ |
+| TAK | ❌ | Windows | ✔️ (decode only) | ❌ | ❌ |
+| WavPack | ✔️ | Cross-platform | ✔️ | ✔️ | ✔️ |
+| OptimFROG | ❌ | Windows, Mac, Linux, FreeBSD | ❌ | ❌ | ❌ |
+| LA | ❌ | Windows & Linux | ❌ | ❌ | ❌ |
+| Monkey's Audio | ✔️ | Cross-platform | ⚠️ (maximum 2 channels decode only) | ✔️ | ✔️ |
+| WMAL | ❌ | Windows | ⚠️ (partially decode support) | ❌ | ❌ |
+| MPEG-4 ALS | ✔️ | Cross-platform | ✔️ (decode only) | ❌ | ❌ |
+| TTA | ✔️ | Cross-platform | ✔️ | ❌ | ❌ |
+| SAC | ✔️ | Cross-platform | ❌ | ❌ | ✔️ |
+| ATRAC3 AL | ❌ | Windows, macOS | ✔️ (decode only) | ❌ | ❌ |
 
 Active development is ticked when it's last two years commits.
 
 **Hardened audio internal program commands:**
-```
+
+```bash
 flac -8epr 15 -l 32 --lax -P0 file.wav
 takc -e -p4m file.wav
 wavpack -x6hh file.wav
@@ -80,7 +90,7 @@ sac --encode --sparse-pcm --optimize=high file.wav file.sac
 
 For encoding Dolby TrueHD or MLP in FFmpeg, you can maximize file size to get compression ratio:
 
-```
+```bash
 ffmpeg -i file.wav -c:a truehd -strict -2 -max_interval 128 -lpc_type 3 -codebook_search 100 -lpc_passes 10 file.thd
 ```
 
@@ -90,35 +100,35 @@ It is little bit smaller compression ratio in FFmpeg than encoded TrueHD using D
 
 ### Stereo
 
-Small sizes | File names | Comments
---- | --- | ---|
-111 900 514 | BigBuckBunny-stereo.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository)
-112 916 608 | BigBuckBunny-stereo.mlp | Dolby Media Encoder SE (Dolby Media Producer, 2010)
-117 753 716 | BigBuckBunny-stereo-16passFF-0po.thd | FFmpeg with 16 pass and hardened (zero prediction result)
-117 756 582 | BigBuckBunny-stereo-10passFF.thd | FFmpeg with 10 pass and hardened (old)
-117 821 850 | BigBuckBunny-stereo-hardened.thd |  FFmpeg with hardened only
-121 831 326 | BigBuckBunny-stereo-normal.thd | FFmpeg default TrueHD
-229 040 102 | BigBuckBunny-stereo.wav | Uncompressed audio file (s32, 24-bit)
+| Small sizes | File names | Comments |
+| --- | --- | --- |
+| 111 900 514 | BigBuckBunny-stereo.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository) |
+| 112 916 608 | BigBuckBunny-stereo.mlp | Dolby Media Encoder SE (Dolby Media Producer, 2010) |
+| 117 753 716 | BigBuckBunny-stereo-16passFF-0po.thd | FFmpeg with 16 pass and hardened (zero prediction result) |
+| 117 756 582 | BigBuckBunny-stereo-10passFF.thd | FFmpeg with 10 pass and hardened (old) |
+| 117 821 850 | BigBuckBunny-stereo-hardened.thd | FFmpeg with hardened only |
+| 121 831 326 | BigBuckBunny-stereo-normal.thd | FFmpeg default TrueHD |
+| 229 040 102 | BigBuckBunny-stereo.wav | Uncompressed audio file (s32, 24-bit) |
 
 ---
 
 ### Surround
 
-Small sizes | File names | Comments
---- | --- | ---|
-239 123 080 | BigBuckBunny-surround.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository)
-239 389 532 | BigBuckBunny-surround.mlp | Dolby Media Encoder SE (Dolby Media Producer, 2010)
-242 768 082 | BigBuckBunny-surround.10passFF-0po.thd | FFmpeg with 10 pass and hardened (zero prediction result)
-242 913 830 | BigBuckBunny-surround-10passFF.thd | FFmpeg with 10 pass and hardened (old)
-243 021 176 | BigBuckBunny-surround-hardened.thd |  FFmpeg with hardened only
-251 187 000 | BigBuckBunny-surround-normal.thd | FFmpeg default TrueHD
-687 123 942 | BigBuckBunny-Surround.wav | Uncompressed audio file (s32, 24-bit)
+| Small sizes | File names | Comments |
+| --- | --- | --- |
+| 239 123 080 | BigBuckBunny-surround.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository) |
+| 239 389 532 | BigBuckBunny-surround.mlp | Dolby Media Encoder SE (Dolby Media Producer, 2010) |
+| 242 768 082 | BigBuckBunny-surround.10passFF-0po.thd | FFmpeg with 10 pass and hardened (zero prediction result) |
+| 242 913 830 | BigBuckBunny-surround-10passFF.thd | FFmpeg with 10 pass and hardened (old) |
+| 243 021 176 | BigBuckBunny-surround-hardened.thd | FFmpeg with hardened only |
+| 251 187 000 | BigBuckBunny-surround-normal.thd | FFmpeg default TrueHD |
+| 687 123 942 | BigBuckBunny-Surround.wav | Uncompressed audio file (s32, 24-bit) |
 
 ---
 
 For WavPack, you can try add additional command of blocksize to hardened command by example:
 
-```
+```bash
 wavpack -x6hh --blocksize=131072 file.wav
 ```
 
@@ -132,12 +142,13 @@ You can use [flaccid](https://github.com/chocolate42/flaccid) to minimize your F
 
 FLACCID Hardened command:
 
-```
+```bash
 flaccid --in example.flac --lax --out result.flac --peakset-window 48 --preserve-flac-metadata --queue 16384 --workers 8 --tweak 1 --merge 0 --analysis-apod 'subdivide_tukey(3)' --output-apod 'subdivide_tukey(9)' --analysis-comp mepl32r15 --output-comp mepl32r15 --mode peakset --blocksize-list 64,128,192,256,320,384,448,512,576,640,704,768,832,896,960,1024,1088,1152,1216,1280,1344,1408,1472,1536,1600,1664,1728,1792,1856,1920,1984,2048,2112,2176,2240,2304,2368,2432,2496,2560,2624,2688,2752,2816,2880,2944,3008,3072,3136,3200,3264,3328,3392,3456,3520,3584,3648,3712,3776,3840,3904,3968,4032,4096,4160,4224,4288,4352,4416,4480,4544,4608
 ```
 
 **FFmpeg hardened commands:**
-```
+
+```bash
 ffmpeg -i file.wav -c:a flac -compression_level 12 -lpc_type cholesky -lpc_passes 8 -exact_rice_parameters 1 file.flac
 ffmpeg -i file.wav -c:a wavpack -compression_level 13
 ffmpeg -i file.wav -c:a tta file.tta
@@ -147,7 +158,7 @@ ffmpeg -i file.wav -c:a tta file.tta
 
 MP3Packer compresses and rearranges for CBR/VBR MP3 Layer I/II streams, but likely optimizing.
 
-```
+```bash
 mp3packer --copy-time -z constant.mp3
 ```
 
@@ -155,7 +166,7 @@ mp3packer --copy-time -z constant.mp3
 
 packMP3 can compress MP3 files with Layer I only
 
-```
+```bash
 packmp3 example.mp3
 ```
 
@@ -164,13 +175,15 @@ packmp3 example.mp3
 mpz can compress MP3 files with any layers and error frames without loss, but it's closed source for Windows available and trialware. The binary file requires MpzSlimmer.dll
 
 Encode (e)/decode (d):
-```
+
+```bash
 mpz e example.mp3 example.mpz
 mpz d example.mpz example.mp3
 ```
 
 Add the lines in Arc.ini
-```
+
+```bash
 [External compressor:mpz]
 header    = 0
 packcmd   = mpz.exe e $$arcdatafile$$.mp3 $$arcpackedfile$$.mpz
@@ -180,7 +193,8 @@ packedfile = $$arcpackedfile$$.mpz
 ```
 
 Recommended options compress via FreeArc:
-```
+
+```bash
 arc a -m0 MP3MPZ.arc -mmpz example.mp3
 ```
 
@@ -195,42 +209,51 @@ Please test it to decompress and match MD5 decompressed same as original MD5.
 For decompressing, please use cls-oggre.dll in FreeArc.
 
 Add the lines in Arc.ini
-```
+
+```bash
 [External compressor:oggre]
 header = 0
 packcmd = oggre_enc.exe {options} $$arcdatafile$$.tmp $$arcpackedfile$$.tmp
 ```
+
 Recommended options compress via FreeArc:
-```
+
+```bash
 arc a -m0 VORBIS.arc -moggre example.ogg
 ```
 
 ## Video
+
 *The video lossless compressors is with video archiver.*
 
-* [AVC](https://en.wikipedia.org/wiki/X264)
-* [HEVC](https://en.wikipedia.org/wiki/X265)
-* [VVC](https://en.wikipedia.org/wiki/Versatile_Video_Coding)
-* [VP9](https://en.wikipedia.org/wiki/VP9)
-* [AV1](https://en.wikipedia.org/wiki/AV1)
-* [DOSBox](https://dosbox.com)
+- [AVC](https://en.wikipedia.org/wiki/X264)
+- [HEVC](https://en.wikipedia.org/wiki/X265)
+- [VVC](https://en.wikipedia.org/wiki/Versatile_Video_Coding)
+- [VP9](https://en.wikipedia.org/wiki/VP9)
+- [AV1](https://en.wikipedia.org/wiki/AV1)
+- [DOSBox](https://dosbox.com)
 
 **AVC:**
 
 Encode lossless video of x264 or FFmpeg:
-```
+
+```bash
 x264 --qp 0 --preset placebo original.y4m -o original.h264
 ```
-```
+
+```bash
 ffmpeg -i original.y4m -c:v libx264 -preset placebo -crf 0 lossless.mp4
 ```
+
 **HEVC:**
 
 Encode lossless video:
-```
+
+```bash
 x265 --lossless --preset placebo original.y4m -o original.h265
 ```
-```
+
+```bash
 ffmpeg -i original.y4m -c:v libx265 -preset placebo -x265-params lossless=1 -crf 0 lossless.mp4
 ```
 
@@ -238,11 +261,11 @@ ffmpeg -i original.y4m -c:v libx265 -preset placebo -x265-params lossless=1 -crf
 
 Encode lossless video via Fraunhofer HHI vvenc encoder:
 
-```
+```bash
 vvencffapp --CostMode lossless -i original.y4m --preset slower -b result.266
 ```
 
-For x266, Multicoreware is releasing x266 encoder soon in H2 2023 (postponed), but future versions will support lossless. Learn more: https://multicorewareinc.com/faq-x266-webinar/
+For x266, Multicoreware is releasing x266 encoder soon in H2 2023 (postponed), but future versions will support lossless. Learn more: <https://multicorewareinc.com/faq-x266-webinar/>
 
 Update about Multicoreware x266 is delayed and postponed with no updates & announcements until it's released.
 
@@ -250,10 +273,11 @@ Update about Multicoreware x266 is delayed and postponed with no updates & annou
 
 Encode lossless video:
 
-```
+```bash
 vpxenc --best --cpu-used=-9 --lossless=1 original.y4m -o result.ivf
 ```
-```
+
+```bash
 ffmpeg -i original.y4m -c:v libvpx-vp9 -deadline best -cpu-used -8 -lossless 1 -speed -16 -quality best result.ivf
 ```
 
@@ -262,10 +286,12 @@ ffmpeg -i original.y4m -c:v libvpx-vp9 -deadline best -cpu-used -8 -lossless 1 -
 ***aomenc is the only one lossless encoder***
 
 Encode lossless video:
-```
+
+```bash
 aomenc -i original.y4m --lossless=1 --cpu-used=3 -o result.ivf
 ```
-```
+
+```bash
 ffmpeg -i original.y4m -c:v libaom-av1 -aom-params lossless=1 -cpu-used 3 -o result.ivf
 ```
 
@@ -273,7 +299,7 @@ TIP: If you want also encode lossless alpha video, the only video encoder to use
 
 For example libvpx-vp9 alpha lossless video using FFmpeg, add command following:
 
-```
+```text
 -pix_fmt yuva420p
 ```
 
@@ -283,19 +309,19 @@ ZMBV (Zip Motion Blocks Video) codec is used to encode DOS display screen about 
 
 To encode lossless video to ZMBV video codec via FFmpeg:
 
-```
+```bash
 ffmpeg -i sample-dos.avi -c:v zmbv -pix_fmt pal8 result.avi
 ```
 
 If you screen recording manually in web browsers via archive.org or OBS Studio for example only screen, you can downscale the video, but make sure if you're only downscaling with only DOS Screen:
 
-```
+```bash
 ffmpeg -i recorded-obs.mkv -c:v libx264 -crf 0 -vf cropdetect -s:v 640:200 -sws_flags neighbor output.avi
 ```
 
 If you're unsure, you can use cropdetect with NULL which is usable static for at all times:
 
-```
+```bash
 ffmpeg -i recorded-obs.mkv -vf cropdetect -f null /dev/null
 ```
 
@@ -307,30 +333,32 @@ Otherwise if you want to encode to lossless video codec, it may not match MD5 su
 
 ## Web
 
-* [Tidy](https://github.com/htacg/tidy-html5)
-* [JSMin](https://github.com/douglascrockford/JSMin)
-* [wasm-opt](https://github.com/WebAssembly/binaryen#wasm-opt)
-* [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
+- [Tidy](https://github.com/htacg/tidy-html5)
+- [JSMin](https://github.com/douglascrockford/JSMin)
+- [wasm-opt](https://github.com/WebAssembly/binaryen#wasm-opt)
+- [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
 
 **Tidy:**
 
 Tidy can optimize HTML, CSS and XML.
 
-```
+```bash
 tidy --clean true sample.html > samplemin.html
 ```
 
 **JSMin:**
 
 JSMin can optimize javascript files:
-```
+
+```bash
 jsmin <example.js >example.min.js
 ```
 
 **wasm-opt:**
 
 wasm-opt can optimize WebAssembly files:
-```
+
+```bash
 wasm-opt -Oz example.wasm -o example-min.wasm
 ```
 
@@ -346,25 +374,25 @@ It saves snapshots after website is done archived on local machine and you can a
 
 Example from CLI:
 
-```
+```bash
 archivebox add https://martineesmaa.org
 ```
 
 ## Image
 
-* [packJPG](https://github.com/packjpg/packJPG) - A compression program for further compressing JPEG image files
-* [Lepton](https://github.com/dropbox/lepton) - Lepton is a tool and file format for losslessly compressing JPEGs by an average of 22%.
-* [JPEG-XL](https://github.com/libjxl/libjxl) - JPEG XL image format reference implementation
-* [ECT](https://github.com/fhanau/Efficient-Compression-Tool) - Fast and effective C++ file optimizer
-* [paq8px](https://github.com/hxim/paq8px) - PAQ8PX compression archiver
-* [Scour](https://github.com/scour-project/scour) - An SVG Optimizer / Cleaner
-* [gifsicle](https://github.com/kohler/gifsicle) - Create, manipulate, and optimize GIF images and animations
+- [packJPG](https://github.com/packjpg/packJPG) - A compression program for further compressing JPEG image files
+- [Lepton](https://github.com/dropbox/lepton) - Lepton is a tool and file format for losslessly compressing JPEGs by an average of 22%.
+- [JPEG-XL](https://github.com/libjxl/libjxl) - JPEG XL image format reference implementation
+- [ECT](https://github.com/fhanau/Efficient-Compression-Tool) - Fast and effective C++ file optimizer
+- [paq8px](https://github.com/hxim/paq8px) - PAQ8PX compression archiver
+- [Scour](https://github.com/scour-project/scour) - An SVG Optimizer / Cleaner
+- [gifsicle](https://github.com/kohler/gifsicle) - Create, manipulate, and optimize GIF images and animations
 
 **packJPG:**
 
 packJPG can compress JPG files fast, most compatibility and cross-platform for desktop operating systems only.
 
-```
+```bash
 packjpg example.jpg
 ```
 
@@ -372,7 +400,7 @@ packjpg example.jpg
 
 Lepton is the Dropbox JPG compressor tool, but the development has deprecated since November 19 2022. Two binaries are lepton default and lepton slow best ratio. On Lepton default, the JPG file is compressed little bigger than packJPG compressed file, but the slow best ratio got little better than packJPG.
 
-```
+```bash
 lepton -skipvalidate example.jpg
 lepton-slow-best-ratio -skipvalidate example.jpg
 ```
@@ -381,7 +409,7 @@ lepton-slow-best-ratio -skipvalidate example.jpg
 
 If you're looking for an active project implementation programming language of Lepton, you can use Microsoft's rust code:
 
-https://github.com/microsoft/lepton_jpeg_rust
+<https://github.com/microsoft/lepton_jpeg_rust>
 
 This is an active repository than original deprecated Dropbox's repository.
 
@@ -390,12 +418,14 @@ This is an active repository than original deprecated Dropbox's repository.
 JPEG-XL can compress JPG and PNG files, even supports animations and lossless/lossy compression. JPEG-XL was implementated to the [supported softwares](https://jpegxl.info/), but due to the cons for Chrome version 110+ removed JPEG-XL and Firefox is only available version of Nightly or Librewolf needs to enable jxl via config. JPEG-XL lossless compression ratio of JPG files got a little bigger file size and memory than packJPG and Lepton, but my best suggestion is for PNG files and the supported programs.
 
 Default command:
-```
+
+```bash
 cjxl -d 0 example.png example.jxl
 ```
 
 Hardened command:
-```
+
+```bash
 cjxl -d 0 -e 10 -E 11 -g 3 -I 100 example.png example.jxl
 ```
 
@@ -406,13 +436,15 @@ Now newer versions of libjxl can go effort up to 10, but still you can add `--al
 **ect:**
 
 Efficient Compression Tool can optimize JPG and PNG files, command:
-```
+
+```bash
 ect -9 example.jpg
 ect -9 example.png
 ```
 
 Hardened commands:
-```
+
+```bash
 ect -99999 --allfilters-b --pal_sort=120 example.png
 ```
 
@@ -424,13 +456,13 @@ If it's compressed zip method, enable `-zip`.
 
 If it's compressed G-Zip, enable `-gzip`.
 
-Documentation: https://github.com/fhanau/Efficient-Compression-Tool/blob/master/doc/Manual.docx
+Documentation: <https://github.com/fhanau/Efficient-Compression-Tool/blob/master/doc/Manual.docx>
 
 **paq8px:**
 
 paq8px can compress more better compression ratio using JPEG/PNG/BMP built in model than packJPG, Lepton and JPEG-XL, but it is more slower process than other JPG compressors.
 
-```
+```bash
 paq8px -7ba example.jpg
 ```
 
@@ -445,15 +477,20 @@ Some JPEG files may not detect, which goes back to normal model.
 Scour is the cleaner and optimizer of SVG files.
 
 Normal:
-```
+
+```bash
 scour -i input.svg -o output.svg
 ```
+
 Better (for older versions of Internet Explorer):
-```
+
+```bash
 scour -i input.svg -o output.svg --enable-viewboxing
 ```
+
 Maximum scrubbing (hardened):
-```
+
+```bash
 scour -i input.svg -o output.svg --enable-viewboxing --enable-id-stripping \
   --enable-comment-stripping --shorten-ids --indent=none
 ```
@@ -463,24 +500,25 @@ TIP: You could output SVGZ compressed file `-o output.svgz` and optimize using E
 **gifsicle:**
 
 gifsicle can optimize your GIF files.
-```
+
+```bash
 gifsicle example.gif
 ```
 
 ## Archive
 
-* [7-Zip](https://www.7-zip.org/)
-* [WinRAR](https://www.win-rar.com/)
-* [FreeArc](https://web.archive.org/web/20160124195439/http://freearc.org/)
-* [PeaZip](https://peazip.github.io/)
-* [paq8px](https://github.com/hxim/paq8px)
-* [precomp-cpp](https://github.com/schnaader/precomp-cpp)
+- [7-Zip](https://www.7-zip.org/)
+- [WinRAR](https://www.win-rar.com/)
+- [FreeArc](https://web.archive.org/web/20160124195439/http://freearc.org/)
+- [PeaZip](https://peazip.github.io/)
+- [paq8px](https://github.com/hxim/paq8px)
+- [precomp-cpp](https://github.com/schnaader/precomp-cpp)
 
 **7-Zip:**
 
 You can compress big files to .7z compressed file following by hardened command via CLI:
 
-```
+```bash
 7z a -m0=LZMA -mmt1 -mx9 -md3840m -mfb273 -mqs=on output.7z file.txt
 ```
 
@@ -496,7 +534,7 @@ Or even graphical user interface can be seen of this photo:
 
 You can compress using CLI:
 
-```
+```bash
 rar a -m5 -md1024m -s output.rar file.txt
 ```
 
@@ -520,16 +558,16 @@ into default recompressed LZMA2 default compression of PCF extension.
 
 Default command:
 
-```
+```bash
 precomp example.zip
 ```
 
 ## Mux
 
-* [MKVToolNix](https://mkvtoolnix.download)
-* [FFmpeg](https://ffmpeg.org)
-* [mp4box](https://gpac.wp.imt.fr/)
-* [Media file container formats of mux overhead](#media-file-container-formats-of-mux-overhead)
+- [MKVToolNix](https://mkvtoolnix.download)
+- [FFmpeg](https://ffmpeg.org)
+- [mp4box](https://gpac.wp.imt.fr/)
+- [Media file container formats of mux overhead](#media-file-container-formats-of-mux-overhead)
 
 To optimize a little file sizes:
 
@@ -537,7 +575,7 @@ To optimize a little file sizes:
 
 Mux one file to matroska container using GUI and command line to remove all metadata, including tags:
 
-```
+```bash
 mkvpropedit file.mkv --tags all: --edit info --set writing-application="" --edit info --set muxing-application="" -d date -d segment-uid
 ```
 
@@ -545,9 +583,10 @@ mkvpropedit file.mkv --tags all: --edit info --set writing-application="" --edit
 
 You can remove writing library and metadata:
 
-```
+```bash
 ffmpeg -i example.mp4 -c copy -fflags +bitexact -flags:v +bitexact -flags:a +bitexact -map_metadata -1 example_removed.mp4
 ```
+
 For AVC, add `-bsf:v "filter_units=remove_types=6"`
 
 For HEVC, add `-x265-params no-info=1`
@@ -556,11 +595,11 @@ For HEVC, add `-x265-params no-info=1`
 
 You can remove writing library and metadata:
 
-```
+```bash
 mp4box -itags all=NULL -for-test -add example.h264 -new example.mp4
 ```
 
-### Media file container formats of mux overhead: ###
+### Media file container formats of mux overhead
 
 To optimize file size by output media container formats of supported video codecs, you need FFmpeg.
 
@@ -572,7 +611,7 @@ Official Matroska of MKVToolnix supports only few video/audio formats, but FFmpe
 
 For FFmpeg, if you want to disable CRC32 protection to save little bit size, you can use command to apply for it:
 
-```
+```bash
 ffmpeg -i example.mp4 -c copy -write_crc32 false result.mkv
 ```
 
@@ -582,11 +621,11 @@ The best possible small size mux of Matroska is to go FFmpeg.
 
 If you want still get small mux overhead, you can optimize using mkclean.
 
-* [mkclean](https://www.matroska.org/downloads/mkclean.html)
+- [mkclean](https://www.matroska.org/downloads/mkclean.html)
 
 Optimize matroska file using mkclean:
 
-```
+```bash
 mkclean --doctype 2 --optimize example.mkv
 ```
 
@@ -604,13 +643,13 @@ If you would like to optimize it of MPEG-4, you can use mp4box to optimize more
 
 MP4Box:
 
-```
+```bash
 mp4box -for-test -add sample.mp4 -new optimized.mp4
 ```
 
 FFmpeg:
 
-```
+```bash
 ffmpeg -i sample.mp4 -c copy -movflags empty_moov -empty_hdlr_name 1 -write_btrt 0 sample-optimized.mp4
 ```
 
@@ -618,7 +657,7 @@ ffmpeg -i sample.mp4 -c copy -movflags empty_moov -empty_hdlr_name 1 -write_btrt
 
 Optimize using mp4box:
 
-```
+```bash
 mp4box -for-test -zmov -add sample.mp4 -new sample.mov
 ```
 
@@ -626,17 +665,17 @@ mp4box -for-test -zmov -add sample.mp4 -new sample.mov
 
 You can get mux overhead smaller by extracting from any container to raw video & audio files in FFmpeg or MP4Box, after that do in mp4box:
 
-```
+```bash
 ffmpeg -i muxed.mp4 -c copy video.h264
 ffmpeg -i muxed.mp4 -c copy audio.aac
 ```
 
-```
+```bash
 mp4box -raw 1 muxed.mp4 -out video.h264
 mp4box -raw 2 muxed.mp4 -out audio.aac
 ```
 
-```
+```bash
 mp4box -for-test -add video.h264+audio.aac -new optimizedbest.mp4
 ```
 
@@ -644,7 +683,7 @@ mp4box -for-test -add video.h264+audio.aac -new optimizedbest.mp4
 
 **Tip:** If you already done muxing video or/and audio using mp4box or FFmpeg, you can use Bento4's mp4compact.
 
-```
+```bash
 mp4compact optimizedbest.mp4 optimizedbest-1.mp4
 ```
 
@@ -654,7 +693,7 @@ This command converts stsz tables into stz2 tables to create more compact MP4 fi
 
 If you want to optimize file to save little size bit, you need FFmpeg and optimize it:
 
-```
+```bash
 ffmpeg -i Wildlife.wmv -c copy -fflags +bitexact -flags:v +bitexact -flags:a +bitexact -packet_size 24000 Wildlife-copy.wmv
 ```
 
@@ -667,23 +706,22 @@ If the file container of WMV optimized (no loss quality, only stream copy) went 
 To optimize smallest size of AVI file, you can use:
 
 - [AVI Mux GUI](https://www.alexander-noe.com/video/amg/)
-
 - [FFmpeg](https://ffmpeg.org)
 
 AVI Mux GUI gives better to reduce mux overhead than native FFmpeg AVI muxer, but AVI Mux GUI and FFmpeg supports compatible video/audio codecs of AVI container.
 
 ## Executable
 
-* [UPX](https://github.com/upx/upx) - the Ultimate Packer for eXecutables
-* [Crinkler](https://github.com/runestubbe/Crinkler) - Crinkler is an executable file compressor (or rather, a compressing linker) for compressing small 32-bit Windows demoscene executables.
-* [kkrunchy](http://www.farbrausch.de/~fg/kkrunchy/) - kkrunchy is a small exe packer primarily meant for 64k intros. ([source code](https://github.com/farbrausch/fr_public/tree/master/kkrunchy_k7))
-* [Leanify](https://github.com/JayXon/Leanify) - Lightweight lossless file minifier/optimizer
-* [CompactGUI](https://github.com/IridiumIO/CompactGUI) - Transparently compress active games and programs using Windows 10/11 APIs
-* [MSVC](https://visualstudio.microsoft.com/vs/features/cplusplus/) - Microsoft Visual C++
-* [GCC](https://gcc.gnu.org/) - the GNU Compiler Collection
-* [TCC](https://bellard.org/tcc/) - Tiny C Compiler
-* [Clang](https://clang.llvm.org/) - a C language family frontend for LLVM
-* [Rust](https://www.rust-lang.org/) - Empowering everyone to build reliable and efficient software.
+- [UPX](https://github.com/upx/upx) - the Ultimate Packer for eXecutables
+- [Crinkler](https://github.com/runestubbe/Crinkler) - Crinkler is an executable file compressor (or rather, a compressing linker) for compressing small 32-bit Windows demoscene executables.
+- [kkrunchy](http://www.farbrausch.de/~fg/kkrunchy/) - kkrunchy is a small exe packer primarily meant for 64k intros. ([source code](https://github.com/farbrausch/fr_public/tree/master/kkrunchy_k7))
+- [Leanify](https://github.com/JayXon/Leanify) - Lightweight lossless file minifier/optimizer
+- [CompactGUI](https://github.com/IridiumIO/CompactGUI) - Transparently compress active games and programs using Windows 10/11 APIs
+- [MSVC](https://visualstudio.microsoft.com/vs/features/cplusplus/) - Microsoft Visual C++
+- [GCC](https://gcc.gnu.org/) - the GNU Compiler Collection
+- [TCC](https://bellard.org/tcc/) - Tiny C Compiler
+- [Clang](https://clang.llvm.org/) - a C language family frontend for LLVM
+- [Rust](https://www.rust-lang.org/) - Empowering everyone to build reliable and efficient software.
 
 To compress executable file:
 
@@ -691,13 +729,13 @@ To compress executable file:
 
 You can compress using the best method for supported version programs:
 
-```
+```bash
 upx --best --ultra-brute --all-methods example.exe -oexample_shrinked.exe
 ```
 
 If you would like to compress all icons, add `--compress-icons=3`
 
-See the UPX documentation: https://github.com/upx/upx/blob/devel/doc/upx-doc.txt
+See the UPX documentation: <https://github.com/upx/upx/blob/devel/doc/upx-doc.txt>
 
 **Crinkler:**
 
@@ -708,18 +746,20 @@ For Visual Studio .NET 2003 version: Use /GA to reduce file size.
 For Visual Studio 2005 and later: Use /GS- to reduce file size.
 
 Crinkler normal command:
-```
+
+```bash
 cl /c /O1 /GS- example.c && \
 crinkler /ENTRY:main /SUBSYSTEM:CONSOLE example.obj kernel32.lib
 ```
 
 Crinkler insane command:
-```
+
+```bash
 cl /c /O1 /GS- example.c && \
 crinkler /ENTRY:main /NODEFAULTLIB /UNSAFEIMPORT /TINYHEADER /TINYIMPORT /COMPMODE:VERYSLOW /HASHSIZE:1000 /HASHTRIES:100000 /ORDERTRIES:100000 /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /TRUNCATEFLOATS /OVERRIDEALIGNMENTS /UNALIGNCODE example.obj kernel32.lib user32.lib
 ```
 
-See the Crinkler documentation: https://github.com/runestubbe/Crinkler/blob/master/doc/manual.txt
+See the Crinkler documentation: <https://github.com/runestubbe/Crinkler/blob/master/doc/manual.txt>
 
 If your code wants to target subsystem Windows, change from CONSOLE to WINDOWS.
 
@@ -738,12 +778,14 @@ Kkrunchy can pack the file for executable files for Windows only. Any MSVC build
 ***Please note that the packer may accept smaller than 1 MB to reduce sizes.***
 
 Kkrunchy command:
-```
+
+```bash
 kkrunchy msvc_build.exe --out msvc_build-kk.exe
 ```
 
 Best command:
-```
+
+```bash
 kkrunchy --best msvc_build.exe --out msvc_build-kk.exe
 ```
 
@@ -757,7 +799,7 @@ For leanifing kkrunchy compressed program, it is **not recommended** to remove 3
 
 Leanify can remove only 512 bytes for Windows 32-bit and 64-bit UPX portable executable packed file with MSVC build for removing header after compress. This cannot unpack UPX packed file forever after Leanify shrinked UPX packed file, but it still runs okay.
 
-```
+```bash
 leanify upx_packed.exe
 ```
 
@@ -765,32 +807,30 @@ leanify upx_packed.exe
 
 Compact GUI allows you to compress games and softwares on Windows.
 
-Before you compress the game or/and software, please see the reported community compression results of claimed compressed sizes on [here](https://github.com/IridiumIO/CompactGUI/wiki/Community-Compression-Results).
+Before you compress the game or/and software, please see the reported community compression results of claimed compressed sizes on [link here](https://github.com/IridiumIO/CompactGUI/wiki/Community-Compression-Results).
 
 Available of compression:
 
-**XPRESS4K**
+- **XPRESS4K**
+- **XPRESS8K**
+- **XPRESS16K**
+- **LZX**
 
-**XPRESS8K**
-
-**XPRESS16K**
-
-**LZX**
-
-For the new games or softwares that may require more rams and CPUs, I'd recommend picking XPRESS4K or XPRESS8K, you can pick whenever you like it depending on your computer like old games could be compressed by XPRESS16K or LZX. You can have look for the options description what it said: https://github.com/IridiumIO/CompactGUI#options
+For the new games or softwares that may require more rams and CPUs, I'd recommend picking XPRESS4K or XPRESS8K, you can pick whenever you like it depending on your computer like old games could be compressed by XPRESS16K or LZX. You can have look for the options description what it said: <https://github.com/IridiumIO/CompactGUI#options>
 
 **MSVC:**
 
 If you want to compile example C file, command:
 
-```
+```bash
 cl /O1 example.c /link user32.lib
 ```
 
 **GCC:**
 
 If you want to compile example C file, command:
-```
+
+```bash
 gcc -Os -s -flto example.c
 ```
 
@@ -798,21 +838,23 @@ gcc -Os -s -flto example.c
 
 This is likely different than GCC, but it has a little minimum libraries, headers and others. It allows to compile for minimum size than GCC and run the old machines up to Windows 95 and later, also Linux too.
 
-```
+```bash
 tcc example.c -o example
 ```
 
 **Clang:**
 
 If you want to compile example C file, command:
-```
+
+```bash
 clang -Os example.c
 ```
 
 **Rust:**
 
 You can add following lines in config.toml:
-```
+
+```rust
 [profile.release]
 opt-level = 2
 lto = true
