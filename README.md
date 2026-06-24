@@ -26,10 +26,10 @@ You're welcome to add additional compressor/optimizer tools and anything by a pu
 - [ALAC](https://en.wikipedia.org/wiki/Apple_Lossless_Audio_Codec) - Apple Lossless Audio Codec, best for Apple legacy devices.
 - [TAK](http://thbeck.de/Tak/Tak.html) - Tom's Lossless audio Kompressor, best for speed of encode & decode
 - [WavPack](https://wavpack.com) - Wave Packer, best for DSD and 32-bit float IEEE
-- [OptimFROG](http://losslessaudio.org/) - Optim Frog, best for file size of maximum preset
-- [LA](https://web.archive.org/web/20210501091140/http://www.lossless-audio.com/) - Lossless Audio Codec, best -lternative to OptimFROG
+- [OptimFROG](http://losslessaudio.org/) - OptimFROG, best for file size of maximum preset
+- [LA](https://web.archive.org/web/20210501091140/http://www.lossless-audio.com/) - Lossless Audio Codec, best alternative to OptimFROG
 - [Monkey's Audio](https://monkeysaudio.com/) - Monkey's Audio, best for compression well.
-- [MP4-ALS](https://en.wikipedia.org/wiki/Audio_Lossless_Coding) - MPEG-4 Audio Lossless, best for multichannel -ompression ratio.
+- [MP4-ALS](https://en.wikipedia.org/wiki/Audio_Lossless_Coding) - MPEG-4 Audio Lossless, best for multichannel compression ratio.
 - [TTA](https://tausoft.org/en/true-audio-%d0%ba%d0%be%d0%b4%d0%b5%d0%ba-tta/) - True Audio Lossless, best for ultra low latency.
 - [SAC](https://github.com/slmdev/sac) - State of the Art Lossless Codec, best alternative to OptimFROG.
 
