@@ -98,31 +98,37 @@ For MLP encoder, change to `-c:a mlp` and make sure the file container is `.mlp`
 
 It is little bit smaller compression ratio in FFmpeg than encoded TrueHD using Dolby Media Encoder of proprietary encoder software. See the list of file sizes from smallest to biggest.
 
+### Audio compression tests
+
+Sample test audio file source from Big Buck Bunny (24 FPS original version) of stereo and surround 5.1.
+
 ### Stereo
 
 | Small sizes | File names | Comments |
 | --- | --- | --- |
-| 111 900 514 | BigBuckBunny-stereo.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository) |
+| 111 900 414 | BigBuckBunny-stereo.mlp | Dolby Media Encoder (TrueHD, DEE 5.3.0) |
+| 111 900 514 | BigBuckBunny-stereo.thd | Dolby Media Encoder (TrueHD, DEE 5.2.1 used deew in Python from GitHub repository) |
 | 112 916 608 | BigBuckBunny-stereo.mlp | Dolby Media Encoder SE (Dolby Media Producer, 2010) |
 | 117 753 716 | BigBuckBunny-stereo-16passFF-0po.thd | FFmpeg with 16 pass and hardened (zero prediction result) |
 | 117 756 582 | BigBuckBunny-stereo-10passFF.thd | FFmpeg with 10 pass and hardened (old) |
 | 117 821 850 | BigBuckBunny-stereo-hardened.thd | FFmpeg with hardened only |
 | 121 831 326 | BigBuckBunny-stereo-normal.thd | FFmpeg default TrueHD |
-| 229 040 102 | BigBuckBunny-stereo.wav | Uncompressed audio file (s32, 24-bit) |
+| 229 040 068 | BigBuckBunny-stereo.wav | Uncompressed audio file (s32, 24-bit) |
 
 ---
 
-### Surround
+### Surround 5.1
 
 | Small sizes | File names | Comments |
 | --- | --- | --- |
-| 239 123 080 | BigBuckBunny-surround.thd | Dolby Media Encoder (TrueHD, used deew in Python from GitHub repository) |
+| 235 431 510 | BigBuckBunny-surround.mlp | Dolby Media Encoder (TrueHD, DEE 5.2.1 used deew in Python from GitHub repository) |
+| 239 123 080 | BigBuckBunny-surround.thd | Dolby Media Encoder (TrueHD, DEE 5.2.1 used deew in Python from GitHub repository) |
 | 239 389 532 | BigBuckBunny-surround.mlp | Dolby Media Encoder SE (Dolby Media Producer, 2010) |
 | 242 768 082 | BigBuckBunny-surround.10passFF-0po.thd | FFmpeg with 10 pass and hardened (zero prediction result) |
 | 242 913 830 | BigBuckBunny-surround-10passFF.thd | FFmpeg with 10 pass and hardened (old) |
 | 243 021 176 | BigBuckBunny-surround-hardened.thd | FFmpeg with hardened only |
 | 251 187 000 | BigBuckBunny-surround-normal.thd | FFmpeg default TrueHD |
-| 687 123 942 | BigBuckBunny-Surround.wav | Uncompressed audio file (s32, 24-bit) |
+| 515 342 948 | BigBuckBunny-surround.wav | Uncompressed audio file (s32, 24-bit) |
 
 ---
 
