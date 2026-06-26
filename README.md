@@ -96,9 +96,9 @@ ffmpeg -i file.wav -c:a truehd -strict -2 -max_interval 128 -lpc_type 3 -codeboo
 
 For MLP encoder, change to `-c:a mlp` and make sure the file container is `.mlp`.
 
-It is little bit smaller compression ratio in FFmpeg than encoded TrueHD using Dolby Media Encoder of proprietary encoder software. See the list of file sizes from smallest to biggest.
-
 ### Audio compression tests
+
+It has a little bit compression ratio of FFmpeg than encoded TrueHD using Dolby Media Encoder with proprietary encoder software. See the list of file sizes from smallest to biggest.
 
 Sample test audio file source from Big Buck Bunny (24 FPS original version) of stereo and surround 5.1.
 
@@ -237,6 +237,7 @@ arc a -m0 VORBIS.arc -moggre example.ogg
 - [VVC](https://en.wikipedia.org/wiki/Versatile_Video_Coding)
 - [VP9](https://en.wikipedia.org/wiki/VP9)
 - [AV1](https://en.wikipedia.org/wiki/AV1)
+- [AV2](https://en.wikipedia.org/wiki/AV2)
 - [DOSBox](https://dosbox.com)
 
 **AVC:**
@@ -393,6 +394,7 @@ archivebox add https://martineesmaa.org
 - [paq8px](https://github.com/hxim/paq8px) - PAQ8PX compression archiver
 - [Scour](https://github.com/scour-project/scour) - An SVG Optimizer / Cleaner
 - [gifsicle](https://github.com/kohler/gifsicle) - Create, manipulate, and optimize GIF images and animations
+- [oxipng](https://github.com/oxipng/oxipng) - Multithreaded PNG optimizer written in Rust
 
 **packJPG:**
 
@@ -510,6 +512,16 @@ gifsicle can optimize your GIF files.
 ```bash
 gifsicle example.gif
 ```
+
+**oxipng:**
+
+oxipng can optimize your PNG files.
+
+```bash
+oxipng -p -o max --strip safe example.png
+```
+
+Command is used to keep timestamp, maximum optimization and strip all metadata with safe option.
 
 ## Archive
 
